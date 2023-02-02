@@ -11,7 +11,10 @@ import '../styles/style.css';
 
 function Navbar() {
   return (
-    <Top/>
+    <>
+    <Top />
+    <Middle />
+    </>
   )
 }
 
