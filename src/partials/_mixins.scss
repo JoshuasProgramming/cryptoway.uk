@@ -1,0 +1,28 @@
+@use "sass:math";
+
+//import FONTS
+@import './fonts';
+
+@mixin navbar-top($cursorPointer){
+    padding: 10px 10px;
+    background: #1c77ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @if $cursorPointer{
+        cursor: pointer;
+    }
+
+    h1{
+        font-family: "Unbounded",cursive;
+        font-weight: 100;
+        color: $primary-white-color;
+        font-size: 16px;
+
+        @if $cursorPointer{
+            cursor: pointer;
+        }
+        
+    }
+}

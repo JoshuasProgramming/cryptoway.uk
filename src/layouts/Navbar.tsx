@@ -2,13 +2,16 @@
 import React from 'react';
 
 //import navigation folder components
-import top from './navbar/top';
-import middle from './navbar/middle';
-import bottom from './navbar/bottom';
+import Top from './navbar/top';
+import Middle from './navbar/middle';
+import Bottom from './navbar/bottom';
+
+//import styles
+import '../styles/style.css';
 
 function Navbar() {
   return (
-    <div>Nav</div>
+    <Top/>
   )
 }
 

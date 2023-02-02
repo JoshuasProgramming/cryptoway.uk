@@ -1,10 +1,10 @@
 //import react
 import React from 'react'
 
-function middle() {
+function Middle() {
   return (
     <div>middle</div>
   )
 }
 
-export default middle
+export default Middle;

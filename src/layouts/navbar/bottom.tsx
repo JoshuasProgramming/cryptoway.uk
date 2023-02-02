@@ -1,10 +1,10 @@
 //import bottom
 import React from 'react'
 
-function bottom() {
+function Bottom() {
   return (
     <div>bottom</div>
   )
 }
 
-export default bottom
+export default Bottom;

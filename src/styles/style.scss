@@ -1,10 +1,17 @@
 //default setting import
 @import '../partials/default_settings';
 
+//mixins import
+@import '../partials/mixins';
+
+
 //default settings
 *{
-    @include default
+    @include default;
 }
 
-
+//navbar 
+.navbar-top{
+    @include navbar-top(true);
+}
 
