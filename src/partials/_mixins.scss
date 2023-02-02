@@ -1,21 +1,31 @@
-@use "sass:math";
-
 //import FONTS
 @import './fonts';
 
-@mixin navbar-top($cursorPointer){
-    padding: 10px 10px;
-    background: #1c77ee;
+/**
+* default-flexbox is a mixin for typical flexbox style
+*/
+@mixin default-flexbox(){
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/** 
+* navbar-top is a mixin for the top section of the navbar.tsx component (includes default-flexbox mixin and basic h1 settings).
+* $cursorPointer is a parameter to set the pointer:cursor "ON" or "OFF
+*/
+@mixin navbar-top($cursorPointer){
+    padding: 10px 10px;
+    background: #1c77ee;
+
+    @include default-flexbox();
     
     @if $cursorPointer{
         cursor: pointer;
     }
 
     h1{
-        font-family: "Unbounded",cursive;
+        font-family: $navbar-top-font;
         font-weight: 100;
         color: $primary-white-color;
         font-size: 16px;
