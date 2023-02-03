@@ -24,9 +24,9 @@
     .navbar-middle-data{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: column;
-        padding-right: 30px;
+        padding-right: 32px;
         height: 65%;
 
         p{
@@ -40,6 +40,11 @@
             .red{
                 color:rgb(255, 103, 103)
             }
+        }
+
+        img{
+            width: 17px;
+            height: 17px;
         }
     }
 }

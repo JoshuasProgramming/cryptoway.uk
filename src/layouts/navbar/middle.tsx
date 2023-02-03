@@ -39,7 +39,9 @@ function Middle(): JSX.Element | any {
               low_24h={value.low_24h} 
               market_cap_change_percentage_24h={value.market_cap_change_percentage_24h}
               high_24h={value.high_24h}
-              current_price={value.current_price}/>
+              current_price={value.current_price}
+              image={value.image}
+              />
           ))
         }
       </section>
