@@ -12,7 +12,7 @@ import Crypto_nav_subsection from './crypto_nav_subsection';
 function Middle() {
   return (
     data?.map((key:any) => (
-      <Crypto_nav_subsection key={key} name={key.name}/>
+      <Crypto_nav_subsection name={key.name} symbol={key.symbol}/>
     ))
     
   )
