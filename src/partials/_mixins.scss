@@ -27,7 +27,7 @@
 */
 @mixin navbar-top($cursorPointer){
     padding: 10px 10px;
-    background: #1c77ee;
+    background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
     height: 20px;
 
     @include default-flexbox();
@@ -62,7 +62,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: #1b1b1b;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     height: 80px;
 
 }

@@ -15,6 +15,7 @@ function Navbar() {
     <React.Fragment>
     <Top/>
     <Middle />
+    <Bottom/>
     </React.Fragment>
   )
 }
