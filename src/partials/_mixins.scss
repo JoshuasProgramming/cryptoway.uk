@@ -10,6 +10,17 @@
     justify-content: center;
 }
 
+@mixin navbar-top-heading($positionFixed){
+    font-family: $navbar-top-font;
+    font-weight: 100;
+    color: $primary-white-color;
+    font-size: 16px;
+
+    @if $positionFixed{
+        position: fixed;
+    }
+}
+
 /** 
 * navbar-top is a mixin for the top section of the navbar.tsx component (includes default-flexbox mixin and basic h1 settings).
 * $cursorPointer is a parameter to set the pointer:cursor "ON" or "OFF
@@ -26,19 +37,22 @@
     }
 
     h1{
-        font-family: $navbar-top-font;
-        font-weight: 100;
-        color: $primary-white-color;
-        font-size: 16px;
-        position: fixed;
+        @include navbar-top-heading(false);
 
         @if $cursorPointer{
             cursor: pointer;
         }
     }
 
-    .navbar-top-x-btn{
-        padding-left: 95%;
-    }
+    h2{
+        @include navbar-top-heading(true);
+        margin-left: 92%;
+        transition: .3s ease-in-out;
 
+        &:hover{
+            color: darken($color: $primary-white-color, $amount: 80);
+            transition: .3s ease-in-out;
+        }
+    }
+    
 }

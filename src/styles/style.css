@@ -29,9 +29,18 @@
   font-weight: 100;
   color: #f2f2f2;
   font-size: 16px;
-  position: fixed;
   cursor: pointer;
 }
-.navbar-top .navbar-top-x-btn {
-  padding-left: 95%;
+.navbar-top h2 {
+  font-family: "Unbounded", cursive;
+  font-weight: 100;
+  color: #f2f2f2;
+  font-size: 16px;
+  position: fixed;
+  margin-left: 92%;
+  transition: 0.3s ease-in-out;
+}
+.navbar-top h2:hover {
+  color: #262626;
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
