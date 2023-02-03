@@ -5,10 +5,12 @@ import { useState } from 'react';
 
 import axios from 'axios';
 
+// import '../styles/style.css';
+
 //import Crypto_nav_subsection
 import Crypto_nav_subsection from './crypto_nav_subsection';
 
-function Middle(): JSX.Element | any{
+function Middle(): JSX.Element | any {
   let count:number = 0;
 
   const [data, setData] = useState();
@@ -27,9 +29,14 @@ function Middle(): JSX.Element | any{
     count = count + 1;
 
     return (
-      Object.assign(data)?.map((value:any, index:number) => (
-        <Crypto_nav_subsection key={value.symbol} name={value.name} symbol={value.symbol} low_24h={value.low_24h}/>
-      ))
+      <section className="navbar-middle">
+        {
+          Object.assign(data)?.map((value:any, index:number) => (
+            <Crypto_nav_subsection key={value.symbol} name={value.name} symbol={value.symbol} low_24h={value.low_24h}/>
+          ))
+        }
+      </section>
+      
     )
   }
 }

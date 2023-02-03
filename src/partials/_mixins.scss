@@ -56,3 +56,7 @@
     }
     
 }
+
+@mixin navbar-middle(){
+    @include default-flexbox()
+}

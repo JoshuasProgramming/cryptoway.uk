@@ -43,4 +43,10 @@
 .navbar-top h2:hover {
   color: #262626;
   transition: 0.3s ease-in-out;
+}
+
+.navbar-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
