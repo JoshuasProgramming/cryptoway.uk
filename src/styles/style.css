@@ -10,6 +10,7 @@
 * navbar-top is a mixin for the top section of the navbar.tsx component (includes default-flexbox mixin and basic h1 settings).
 * $cursorPointer is a parameter to set the pointer:cursor "ON" or "OFF
 */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -48,5 +49,25 @@
 .navbar-middle {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background: #252525;
+  height: 40px;
+}
+.navbar-middle .navbar-middle-data {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.navbar-middle .navbar-middle-data p {
+  color: #f2f2f2;
+  font-family: "Unbounded", cursive;
+  font-size: 11.5px;
+}
+.navbar-middle .navbar-middle-data p .green {
+  color: rgb(78, 238, 34);
+}
+.navbar-middle .navbar-middle-data p .red {
+  color: rgb(255, 103, 103);
 }/*# sourceMappingURL=style.css.map */

@@ -58,5 +58,11 @@
 }
 
 @mixin navbar-middle(){
-    @include default-flexbox()
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: #252525;
+    height: 40px;
+    
 }

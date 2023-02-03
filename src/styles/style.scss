@@ -4,6 +4,9 @@
 //mixins import
 @import '../partials/mixins';
 
+//include fonts
+@import '../partials/fonts';
+
 
 //default settings
 *{
@@ -17,5 +20,25 @@
 
 .navbar-middle{
     @include navbar-middle();
+
+    .navbar-middle-data{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            color: $primary-white-color;
+            font-family:$navbar-top-font;
+            font-size: 11.5px;
+            .green{
+                color: rgb(78, 238, 34);
+            }
+
+            .red{
+                color:rgb(255, 103, 103)
+            }
+        }
+    }
 }
 

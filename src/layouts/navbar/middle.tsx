@@ -32,7 +32,14 @@ function Middle(): JSX.Element | any {
       <section className="navbar-middle">
         {
           Object.assign(data)?.map((value:any, index:number) => (
-            <Crypto_nav_subsection key={value.symbol} name={value.name} symbol={value.symbol} low_24h={value.low_24h}/>
+            <Crypto_nav_subsection 
+              key={value.symbol} 
+              name={value.name} 
+              symbol={value.symbol} 
+              low_24h={value.low_24h} 
+              market_cap_change_percentage_24h={value.market_cap_change_percentage_24h}
+              high_24h={value.high_24h}
+              current_price={value.current_price}/>
           ))
         }
       </section>
