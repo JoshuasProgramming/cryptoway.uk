@@ -12,6 +12,6 @@
 
 //navbar 
 .navbar-top{
-    @include navbar-top(false); //set to true or false if you want the cursor on navbar-top to be a pointer (true) or not to be a pointer (false)
+    @include navbar-top(true); //set to true or false if you want the cursor on navbar-top to be a pointer (true) or not to be a pointer (false)
 }
 
