@@ -53,6 +53,8 @@
   flex-direction: row;
   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   height: 80px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 .navbar-middle .navbar-middle-data {
   display: flex;
@@ -84,12 +86,13 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: -webkit-fill-available;
-  background: linear-gradient(to right, #b9bdc1 0%, #888b8b 100%);
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(76, 76, 76) 0%, rgb(23, 23, 23) 99.4%);
   height: 80px;
 }
 .navbar-bottom .left h1 {
   font-size: 30px;
   font-family: "Unbounded", cursive;
+  color: #f2f2f2;
 }
 .navbar-bottom .middle {
   display: flex;
@@ -102,6 +105,7 @@
   font-size: 13px;
   font-family: "Unbounded", cursive;
   font-weight: 300;
+  color: #f2f2f2;
 }
 .navbar-bottom .right {
   display: flex;
@@ -112,10 +116,10 @@
 .navbar-bottom .right p {
   font-size: 15px;
   font-family: "Unbounded", cursive;
-  color: rgb(27, 27, 27);
+  color: #f2f2f2;
 }
 .navbar-bottom .right a {
-  background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
   padding: 10%;
   border-radius: 12px;
   font-size: 14px;
