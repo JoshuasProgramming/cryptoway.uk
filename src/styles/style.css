@@ -51,18 +51,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #f1f1f1;
-  height: 40px;
+  background: #252525;
+  height: 50px;
 }
 .navbar-middle .navbar-middle-data {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  padding-right: 20px;
+  padding-right: 30px;
+  height: 65%;
 }
 .navbar-middle .navbar-middle-data p {
-  color: #202020;
+  color: #f2f2f2;
   font-family: "Unbounded", cursive;
   font-size: 9.5px;
 }
