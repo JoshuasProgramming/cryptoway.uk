@@ -26,9 +26,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding-right: 20px;
 
         p{
-            color: $primary-white-color;
+            color: #202020;
             font-family:$navbar-top-font;
             font-size: 9.5px;
             .green{

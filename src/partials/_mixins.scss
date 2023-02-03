@@ -60,9 +60,9 @@
 @mixin navbar-middle(){
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
-    background: #252525;
+    background: #f1f1f1;
     height: 40px;
-    
+
 }

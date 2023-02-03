@@ -49,9 +49,9 @@
 .navbar-middle {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
-  background: #252525;
+  background: #f1f1f1;
   height: 40px;
 }
 .navbar-middle .navbar-middle-data {
@@ -59,9 +59,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-right: 20px;
 }
 .navbar-middle .navbar-middle-data p {
-  color: #f2f2f2;
+  color: #202020;
   font-family: "Unbounded", cursive;
   font-size: 9.5px;
 }
