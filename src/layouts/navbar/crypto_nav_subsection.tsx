@@ -1,12 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-//import fetch
-import { data } from '../../lib/fetch';
-
-function Crypto_nav_subsection() {
-  console.log(data);
+function Crypto_nav_subsection(props:any){
   return (
-    <h1></h1>
+    <h1>{props.name}</h1>
   )
 }
 
