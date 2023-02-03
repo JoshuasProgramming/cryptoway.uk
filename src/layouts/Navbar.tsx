@@ -10,11 +10,12 @@ import Bottom from './navbar/bottom';
 import '../styles/style.css';
 
 function Navbar() {
+
   return (
-    <>
-    <Top />
+    <React.Fragment>
+    <Top/>
     <Middle />
-    </>
+    </React.Fragment>
   )
 }
 

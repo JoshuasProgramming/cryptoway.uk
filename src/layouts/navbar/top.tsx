@@ -1,12 +1,12 @@
 //import useState
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-function Top() {
+function Top(): JSX.Element {
 
   const [navbarTop, setNavbarTop] = useState(true);
-
   return (
-    navbarTop == true ? 
+    <React.Fragment>
+    {navbarTop == true ? 
     <section className="navbar-top">
         <h1>Sign up to start building wealth</h1>
         <h2 className='navbar-top-x-btn' id="navbar_top" onClick={() => setNavbarTop(false)}>X</h2>
@@ -14,8 +14,8 @@ function Top() {
 
     :
 
-    false
-    
+    false}
+    </React.Fragment>
   )
 }
 
