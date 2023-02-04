@@ -17,7 +17,7 @@
     font-size: 16px;
 
     @if $positionFixed{
-        position: fixed;
+        position: absolute;
     }
 }
 
@@ -62,8 +62,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: #1e1e1e;
     height: 90px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
 }

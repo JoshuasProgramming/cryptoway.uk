@@ -17,7 +17,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(35, 35, 35) 35%, rgb(0, 0, 0) 100%);
+  background: #1e1e1e;
 }
 
 .navbar-top {
@@ -41,7 +41,7 @@ body {
   font-weight: 100;
   color: #f2f2f2;
   font-size: 16px;
-  position: fixed;
+  position: absolute;
   margin-left: 92%;
   transition: 0.3s ease-in-out;
 }
@@ -55,10 +55,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  background: #1e1e1e;
   height: 90px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1.5px solid black;
+  border-top: 1.5px solid black;
 }
 .navbar-middle .navbar-middle-data {
   display: flex;
@@ -160,27 +160,27 @@ body {
 .navbar-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   width: -webkit-fill-available;
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(47, 47, 47) 0%, rgb(1, 1, 1) 99.4%);
+  background: #1e1e1e;
   height: 80px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1.5px solid #000;
 }
 .navbar-bottom .left h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Unbounded", cursive;
   color: #f2f2f2;
 }
 .navbar-bottom .middle {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   width: 600px;
 }
 .navbar-bottom .middle h3 {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Unbounded", cursive;
   font-weight: 300;
   color: #f2f2f2;
@@ -194,6 +194,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 200px;
+  display: none;
 }
 .navbar-bottom .right p {
   font-size: 15px;

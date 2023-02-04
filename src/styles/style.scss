@@ -14,7 +14,7 @@
 }
 
 body{
-    background: linear-gradient(90deg, rgb(32 32 32) 0%, rgb(35 35 35) 35%, rgba(0,0,0,1) 100%);
+    background: #1e1e1e;
 }
 
 //navbar 
@@ -128,16 +128,16 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     width: -webkit-fill-available;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(47, 47, 47) 0%, rgb(1, 1, 1) 99.4%);
+    background: #1e1e1e;
     height: 80px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #000;
 
     .left{
         h1{
-            font-size: 30px;
+            font-size: 35px;
             font-family: $navbar-top-font;
             color: $primary-white-color;
         }
@@ -146,12 +146,12 @@ body{
     .middle{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: row;
         width: 600px;
 
         h3{
-            font-size: 13px;
+            font-size: 12px;
             font-family: $navbar-top-font;
             font-weight: 300;
             color: $primary-white-color;
@@ -168,6 +168,7 @@ body{
         align-items: center;
         justify-content: space-evenly;
         width: 200px;
+        display: none;
 
         p{
             font-size: 15px;
