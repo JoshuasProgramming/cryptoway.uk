@@ -88,7 +88,7 @@ body{
                     font-family: $navbar-top-font;
                 }
                 p{
-                    font-size: 11px;
+                    font-size: 15px;
                     text-align: center;
                     padding-top: 10px;
                 }
@@ -114,7 +114,11 @@ body{
                 p{
                     border-bottom: 1px solid rgb(208, 208, 208);
                     padding-bottom: 15px;
+                    font-size: 15px;
                 }  
+                h3{
+                    text-align: center;
+                }
             }
         }
     }

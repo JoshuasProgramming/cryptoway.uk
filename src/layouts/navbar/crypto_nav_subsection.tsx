@@ -34,12 +34,12 @@ function Crypto_nav_subsection(props:any){
           <section className="crypto_nav_dropdown" id="dropdown">
             <div className='underline'>
                 <h3>24h Low</h3>
-                <p className='red' title='Lowest value in the last 24 hours'>&#11167; {props.low_24h}</p>
+                <p className='red' title='Lowest value in the last 24 hours'>&#11167; £{props.low_24h.toLocaleString("en-US")}</p>
             </div>
 
             <div className='underline'>
                 <h3>24h High</h3>
-                <p className='green' title='Highest value in the last 24 hours'>&#11165; {props.high_24h}</p>
+                <p className='green' title='Highest value in the last 24 hours'>&#11165; £{props.high_24h.toLocaleString("en-US")}</p>
 
             </div>
             <div>

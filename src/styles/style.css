@@ -132,7 +132,7 @@ body {
   font-family: "Unbounded", cursive;
 }
 .navbar-middle .navbar-middle-data .crypto_nav_dropdown div p {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
   padding-top: 10px;
 }
@@ -151,6 +151,10 @@ body {
 .navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline p {
   border-bottom: 1px solid rgb(208, 208, 208);
   padding-bottom: 15px;
+  font-size: 15px;
+}
+.navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline h3 {
+  text-align: center;
 }
 
 .navbar-bottom {
