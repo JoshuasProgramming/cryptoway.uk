@@ -101,7 +101,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid #676666;
+  box-shadow: 1px 1px 10px 1px #363636;
+  -webkit-animation-name: dropdown;
+          animation-name: dropdown;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+@-webkit-keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 .navbar-middle .navbar-middle-data .crypto_nav_dropdown div {
   padding-bottom: 15px;
