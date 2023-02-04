@@ -28,7 +28,7 @@ function Crypto_nav_subsection(props:any){
         :
         <p>{props.name}: <span className='red'>{props.market_cap_change_percentage_24h.toFixed(2)}% &#11167;</span></p>
         }
-        <p>£{props.current_price}</p>
+        <p >£{props.current_price}</p>
         
         { dropdown == false ? false :
           <section className="crypto_nav_dropdown" id="dropdown">
