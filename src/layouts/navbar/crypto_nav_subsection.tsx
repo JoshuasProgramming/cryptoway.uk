@@ -50,7 +50,6 @@ function Crypto_nav_subsection(props:any){
                   <p className='red'>&#11167;{props.price_change_percentage_24h}%</p>
 
                 }
-                {/* <p>{props.price_change_percentage_24h}</p> */}
             </div>
           </section>
         }
