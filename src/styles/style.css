@@ -57,8 +57,8 @@ body {
   flex-direction: row;
   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   height: 80px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 .navbar-middle .navbar-middle-data {
   display: flex;
@@ -72,12 +72,19 @@ body {
   color: #f2f2f2;
   font-family: "Unbounded", cursive;
   font-size: 9.5px;
+  cursor: pointer;
 }
 .navbar-middle .navbar-middle-data p .green {
-  color: rgb(78, 238, 34);
+  color: rgb(83, 219, 45);
+}
+.navbar-middle .navbar-middle-data p .green:hover {
+  color: rgb(62, 250, 9);
 }
 .navbar-middle .navbar-middle-data p .red {
   color: rgb(255, 103, 103);
+}
+.navbar-middle .navbar-middle-data p .red:hover {
+  color: rgb(252, 32, 32);
 }
 .navbar-middle .navbar-middle-data img {
   width: 17px;
@@ -92,6 +99,7 @@ body {
   width: -webkit-fill-available;
   background: radial-gradient(circle at 24.1% 68.8%, rgb(47, 47, 47) 0%, rgb(1, 1, 1) 99.4%);
   height: 80px;
+  border-bottom: 1px solid #000;
 }
 .navbar-bottom .left h1 {
   font-size: 30px;
@@ -110,6 +118,10 @@ body {
   font-family: "Unbounded", cursive;
   font-weight: 300;
   color: #f2f2f2;
+  cursor: pointer;
+}
+.navbar-bottom .middle h3:hover {
+  color: #fff;
 }
 .navbar-bottom .right {
   display: flex;
@@ -121,6 +133,10 @@ body {
   font-size: 15px;
   font-family: "Unbounded", cursive;
   color: #f2f2f2;
+  cursor: pointer;
+}
+.navbar-bottom .right p:hover {
+  color: #fff;
 }
 .navbar-bottom .right a {
   background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
@@ -135,4 +151,14 @@ body {
   transition: 5s ease-in-out;
   background: radial-gradient(circle at 24.1% 68.8%, rgb(66, 65, 65) 0%, rgb(20, 20, 20) 99.4%);
   cursor: pointer;
+}
+
+.example {
+  z-index: 9999;
+  visibility: visible;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  transform: translate3d(708px, 42px, 0px);
 }/*# sourceMappingURL=style.css.map */

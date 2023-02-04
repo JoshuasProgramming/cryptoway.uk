@@ -37,12 +37,21 @@ body{
             color: $primary-white-color;
             font-family:$navbar-top-font;
             font-size: 9.5px;
+            cursor: pointer;
             .green{
-                color: rgb(78, 238, 34);
+                color: rgb(83, 219, 45);
+            }
+
+            .green:hover{
+                color: rgb(62, 250, 9);
             }
 
             .red{
-                color:rgb(255, 103, 103)
+                color:rgb(255, 103, 103);
+            }
+
+            .red:hover{
+                color:rgb(252, 32, 32);
             }
         }
 
@@ -62,6 +71,7 @@ body{
     width: -webkit-fill-available;
     background: radial-gradient(circle at 24.1% 68.8%, rgb(47, 47, 47) 0%, rgb(1, 1, 1) 99.4%);
     height: 80px;
+    border-bottom: 1px solid #000;
 
     .left{
         h1{
@@ -83,6 +93,11 @@ body{
             font-family: $navbar-top-font;
             font-weight: 300;
             color: $primary-white-color;
+            cursor: pointer;
+        }
+
+        h3:hover{
+            color: #fff;
         }
     }
 
@@ -96,6 +111,10 @@ body{
             font-size: 15px;
             font-family: $navbar-top-font;
             color: $primary-white-color;
+            cursor: pointer;
+        }
+        p:hover{
+            color: #fff;
         }
 
         a{
@@ -115,5 +134,15 @@ body{
         }
     }
 
+}
+
+.example{
+    z-index: 9999;
+    visibility: visible;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    transform: translate3d(708px, 42px, 0px);
 }
 

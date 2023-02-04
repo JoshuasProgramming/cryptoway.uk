@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import Top from './top';
 
 function Crypto_nav_subsection(props:any){
+
+  const [dropdown, setDropdown] = useState(false);
+
+  const showDropdown = () => {
+    alert("market low: " + props.low_24h);
+  }
 
   return (
     <div className='navbar-middle-data'>
@@ -15,9 +23,9 @@ function Crypto_nav_subsection(props:any){
         <img src={props.image} />
         {
         props.market_cap_change_percentage_24h > 0.00 ? 
-        <p>{props.name}: <span className='green'>{props.market_cap_change_percentage_24h.toFixed(2)}%</span></p>
+        <p>{props.name}: <span className='green' onMouseEnter={showDropdown}>{props.market_cap_change_percentage_24h.toFixed(2)}% &#11165;</span></p>
         :
-        <p>{props.name}: <span className='red'>{props.market_cap_change_percentage_24h.toFixed(2)}%</span></p>
+        <p>{props.name}: <span className='red' onMouseEnter={showDropdown}>{props.market_cap_change_percentage_24h.toFixed(2)}% &#11167;</span></p>
         }
         <p>£{props.current_price}</p>
         
