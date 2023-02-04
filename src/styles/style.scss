@@ -59,6 +59,61 @@ body{
             width: 17px;
             height: 17px;
         }
+
+
+        .crypto_nav_dropdown{
+            width: 150px;
+            padding: 10%;
+            background: linear-gradient(rgb(50, 50, 50) 0%, rgb(50, 50, 50) 0%);
+            z-index: 2;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            div{
+                padding-bottom: 15px;
+                h3{
+                    color: $primary-white-color;
+                    font-size: 12px;
+                    font-family: $navbar-top-font;
+                }
+                p{
+                    font-size: 11px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+
+                .green{
+                    color: rgb(83, 219, 45);
+                }
+    
+                .green:hover{
+                    color: rgb(62, 250, 9);
+                }
+    
+                .red{
+                    color:rgb(255, 103, 103);
+                }
+    
+                .red:hover{
+                    color:rgb(252, 32, 32);
+                }
+            }
+
+            .underline {
+                p{
+                    border-bottom: 1px solid rgb(208, 208, 208);
+                    padding-bottom: 15px;
+                }
+                
+            }
+
+            
+        }
+
     }
 }
 

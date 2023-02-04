@@ -28,6 +28,8 @@ function Middle(): JSX.Element | any {
   if((count == 0) && data !== undefined){
     count = count + 1;
 
+    console.log(data)
+
     return (
       <section className="navbar-middle">
         {
@@ -41,6 +43,8 @@ function Middle(): JSX.Element | any {
               high_24h={value.high_24h}
               current_price={value.current_price}
               image={value.image}
+              market_cap_rank={value.market_cap_rank}
+              price_change_percentage_24h={value.price_change_percentage_24h}
               />
           ))
         }
