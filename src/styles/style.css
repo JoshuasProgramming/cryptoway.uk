@@ -124,15 +124,11 @@ body {
 }
 .navbar-bottom .right a {
   background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
-  padding: 10%;
+  padding: 5%;
   border-radius: 12px;
   font-size: 14px;
   font-family: "Unbounded", cursive;
   color: #f2f2f2;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
   transition: 5s ease-in-out;
 }
 .navbar-bottom .right a:hover {
