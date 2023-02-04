@@ -13,6 +13,10 @@
     @include default;
 }
 
+body{
+    background: linear-gradient(90deg, rgb(32 32 32) 0%, rgb(35 35 35) 35%, rgba(0,0,0,1) 100%);
+}
+
 //navbar 
 .navbar-top{
     @include navbar-top(true); //set to true or false if you want the cursor on navbar-top to be a pointer (true) or not to be a pointer (false)
@@ -105,6 +109,13 @@
             padding-right: 10%;
             padding-top: 5%;
             padding-bottom: 5%;
+            transition: 5s ease-in-out;
+        }
+
+        a:hover{
+            transition: 5s ease-in-out;
+            background: radial-gradient(circle at 24.1% 68.8%, rgb(66, 65, 65) 0%, rgb(20, 20, 20) 99.4%);
+            cursor: pointer;
         }
     }
 
