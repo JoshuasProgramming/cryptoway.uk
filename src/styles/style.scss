@@ -36,7 +36,7 @@ body{
         p{
             color: $primary-white-color;
             font-family:$navbar-top-font;
-            font-size: 9.5px;
+            font-size: 10.5px;
             cursor: pointer;
             .green{
                 color: rgb(83, 219, 45);
@@ -86,11 +86,13 @@ body{
                     color: $primary-white-color;
                     font-size: 12px;
                     font-family: $navbar-top-font;
+                    text-align: center;
                 }
                 p{
                     font-size: 15px;
                     text-align: center;
                     padding-top: 10px;
+                    text-align: center;
                 }
 
                 .green{

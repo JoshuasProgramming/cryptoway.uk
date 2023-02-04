@@ -71,7 +71,7 @@ body {
 .navbar-middle .navbar-middle-data p {
   color: #f2f2f2;
   font-family: "Unbounded", cursive;
-  font-size: 9.5px;
+  font-size: 10.5px;
   cursor: pointer;
 }
 .navbar-middle .navbar-middle-data p .green {
@@ -130,11 +130,13 @@ body {
   color: #f2f2f2;
   font-size: 12px;
   font-family: "Unbounded", cursive;
+  text-align: center;
 }
 .navbar-middle .navbar-middle-data .crypto_nav_dropdown div p {
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
+  text-align: center;
 }
 .navbar-middle .navbar-middle-data .crypto_nav_dropdown div .green {
   color: rgb(83, 219, 45);

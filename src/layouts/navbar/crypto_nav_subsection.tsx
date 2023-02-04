@@ -56,6 +56,7 @@ function Crypto_nav_subsection(props:any){
 
             <div>
               <h3>{props.name}</h3>
+              <p >£{props.current_price}</p>
             </div>
 
           </section>
