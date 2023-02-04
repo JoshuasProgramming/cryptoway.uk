@@ -95,7 +95,7 @@ body {
   padding: 10%;
   background: linear-gradient(rgb(24, 24, 24) 0%, rgb(24, 24, 24) 0%);
   z-index: 2;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 10px;
   display: flex;
   align-items: center;
