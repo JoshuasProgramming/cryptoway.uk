@@ -42,7 +42,7 @@ function Crypto_nav_subsection(props:any){
                 <p className='green' title='Highest value in the last 24 hours'>&#11165; £{props.high_24h.toLocaleString("en-US")}</p>
 
             </div>
-            <div>
+            <div className='underline'>
                 <h3>Price Change 24h &#9650; </h3>
                 {props.price_change_percentage_24h > 0.00 ? 
                   <p className='green' title='How much the price has changed in the last 24 hours' >&#11165; {props.price_change_percentage_24h}%</p>
@@ -53,6 +53,11 @@ function Crypto_nav_subsection(props:any){
 
                 }
             </div>
+
+            <div>
+              <h3>{props.name}</h3>
+            </div>
+
           </section>
         }
 
