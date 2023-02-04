@@ -86,7 +86,7 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: -webkit-fill-available;
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(76, 76, 76) 0%, rgb(23, 23, 23) 99.4%);
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(47, 47, 47) 0%, rgb(1, 1, 1) 99.4%);
   height: 80px;
 }
 .navbar-bottom .left h1 {
