@@ -10,6 +10,7 @@ function Crypto_nav_subsection(props:any){
     if(dropdown == false){
       setDropdown(true)
     } 
+
   }
 
   const removeDropdown = () => {
@@ -33,21 +34,22 @@ function Crypto_nav_subsection(props:any){
           <section className="crypto_nav_dropdown" id="dropdown">
             <div className='underline'>
                 <h3>24h Low</h3>
-                <p className='red'>&#11167; {props.low_24h}</p>
-
+                <p className='red' title='Lowest value in the last 24 hours'>&#11167; {props.low_24h}</p>
             </div>
+
             <div className='underline'>
                 <h3>24h High</h3>
-                <p className='green'>&#11165; {props.high_24h}</p>
+                <p className='green' title='Highest value in the last 24 hours'>&#11165; {props.high_24h}</p>
+
             </div>
             <div>
                 <h3>Price Change 24h &#9650; </h3>
                 {props.price_change_percentage_24h > 0.00 ? 
-                  <p className='green'>&#11165; {props.price_change_percentage_24h}%</p>
+                  <p className='green' title='How much the price has changed in the last 24 hours' >&#11165; {props.price_change_percentage_24h}%</p>
 
                   :
 
-                  <p className='red'>&#11167; {props.price_change_percentage_24h}%</p>
+                  <p className='red' title='How much the price has changed in the last 24 hours'>&#11167; {props.price_change_percentage_24h}%</p>
 
                 }
             </div>

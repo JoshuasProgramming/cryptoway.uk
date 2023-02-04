@@ -73,8 +73,6 @@ body{
             flex-direction: column;
             border: 1px solid #676666;
 
-            // opacity: 100;
-
             div{
                 padding-bottom: 15px;
                 h3{
@@ -109,24 +107,9 @@ body{
                 p{
                     border-bottom: 1px solid rgb(208, 208, 208);
                     padding-bottom: 15px;
-                }
-                
+                }  
             }
-
-            
         }
-
-        // .crypto_nav_dropdown:hover{
-
-        //     animation:navbar_dropdown_off;
-        //     animation-duration: 3s;
-
-        //     @keyframes nav_dropdown_off {
-        //         from {opacity: 100;}
-        //         to {opacity: 0;}
-        //     }
-        // }
-
     }
 }
 
