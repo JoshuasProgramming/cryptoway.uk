@@ -3,9 +3,14 @@ import React, { useState } from 'react'
 
 function Top(): JSX.Element {
 
+  //set boolean variable and function => navbarTop has an initial value of 'true'
   const [navbarTop, setNavbarTop] = useState(true);
+
+
+  //when navbarTop == 'true
   return (
     <React.Fragment>
+
     {navbarTop == true ? 
     <section className="navbar-top">
         <h1>Sign up to start building wealth</h1>
