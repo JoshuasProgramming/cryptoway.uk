@@ -3,6 +3,7 @@ import './styles/style.css';
 
 //import navbar component
 import Navbar from './layouts/Navbar';
+import Hero from './layouts/homepage/hero';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <Navbar/>
+    <><Navbar /><Hero /></>
   )
 }
 
