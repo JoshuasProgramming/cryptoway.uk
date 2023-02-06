@@ -1,8 +1,7 @@
 //import react
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
 
-import { useState } from 'react';
-
+//import axios for fetching
 import axios from 'axios';
 
 //import Crypto_nav_subsection
@@ -11,10 +10,13 @@ import Crypto_nav_subsection from './crypto_nav_subsection';
 function Middle(): JSX.Element | any {
   let count:number = 0;
 
+  // data variable and setData function with initial value of nothing.
   const [data, setData] = useState();
 
+  //variable to store the api link for the crypto coins
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=10&page=1&sparkline=false";
 
+  //code to fetch the data from the 'url' variable
   useEffect(() => {
     axios.get(url).then((response:any) => {
       setData(response.data)
@@ -23,11 +25,11 @@ function Middle(): JSX.Element | any {
     })
   }, [])
 
+  //when the count is zero and the data isn't 'undefined'...
   if((count == 0) && data !== undefined){
     count = count + 1;
 
-    console.log(data)
-
+    //map through the data and insert specific values to the 'crypto_nav_subsection' component
     return (
       <section className="navbar-middle">
         {

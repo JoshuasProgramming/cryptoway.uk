@@ -6,7 +6,9 @@ function Hero() {
   return (
     <section className="hero">
 
-        <div className="left"></div>
+        <div className="left">
+          
+        </div>
 
         <div className="right">
             <img src={hero_image} alt="" />
