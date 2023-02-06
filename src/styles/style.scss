@@ -38,6 +38,7 @@ body{
             font-family:$navbar-top-font;
             font-size: 10.5px;
             cursor: pointer;
+            
             .green{
                 color: $primary-green-color;
             }
@@ -47,11 +48,11 @@ body{
             }
 
             .red{
-                color:rgb(255, 103, 103);
+                color:$primary-red-color;
             }
 
             .red:hover{
-                color:rgb(252, 32, 32);
+                color:$primary-red-color-hover;
             }
         }
 

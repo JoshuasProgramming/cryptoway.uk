@@ -81,10 +81,10 @@ body {
   color: #3efa09;
 }
 .navbar-middle .navbar-middle-data p .red {
-  color: rgb(255, 103, 103);
+  color: #ff6767;
 }
 .navbar-middle .navbar-middle-data p .red:hover {
-  color: rgb(252, 32, 32);
+  color: #fc2020;
 }
 .navbar-middle .navbar-middle-data img {
   width: 17px;
