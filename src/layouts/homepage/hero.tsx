@@ -7,7 +7,13 @@ function Hero() {
     <section className="hero">
 
         <div className="left">
-          
+          <div className="top">
+            <h1>Buy & Trade Cryptocurrencies</h1>
+            <p>it</p>
+          </div>
+
+          <div className="bottom"></div>
+
         </div>
 
         <div className="right">
