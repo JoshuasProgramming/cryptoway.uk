@@ -1,8 +1,6 @@
 //import react
 import React, { useState } from 'react';
 
-import Top from './top';
-
 function Crypto_nav_subsection(props:any){
 
   const [dropdown, setDropdown] = useState(false);
