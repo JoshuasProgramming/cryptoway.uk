@@ -8,7 +8,7 @@ function Top(): JSX.Element {
 
 
   //when navbarTop == 'true' we'll display some HTML content
-  //If the user presses the 'X', we'll set navbarTop to 'false'
+  //If the user presses the 'X', we'll set navbarTop to 'false', using the 'setNavbarTop(false)' function
   //when navbarTop == 'false' we'll remove the HTML content
   return (
     <React.Fragment>
