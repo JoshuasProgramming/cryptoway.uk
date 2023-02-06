@@ -3,15 +3,17 @@ import React, { useState } from 'react';
 
 function Crypto_nav_subsection(props:any){
 
+  //created a function, 'setDropdown' and boolean variable 'dropdown' with initial value/state of 'false
   const [dropdown, setDropdown] = useState(false);
 
+  //'showDropdown' function will only set dropdown to 'true' when dropdown is 'false
   const showDropdown = () => {
     if(dropdown == false){
       setDropdown(true)
     } 
-
   }
 
+  //set dropdown to 'false'
   const removeDropdown = () => {
     setDropdown(false)
   }
