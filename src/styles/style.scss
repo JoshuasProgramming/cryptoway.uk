@@ -39,11 +39,11 @@ body{
             font-size: 10.5px;
             cursor: pointer;
             .green{
-                color: rgb(83, 219, 45);
+                color: $primary-green-color;
             }
 
             .green:hover{
-                color: rgb(62, 250, 9);
+                color: $primary-green-color-hover;
             }
 
             .red{

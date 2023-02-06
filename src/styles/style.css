@@ -75,10 +75,10 @@ body {
   cursor: pointer;
 }
 .navbar-middle .navbar-middle-data p .green {
-  color: rgb(83, 219, 45);
+  color: #53db2d;
 }
 .navbar-middle .navbar-middle-data p .green:hover {
-  color: rgb(62, 250, 9);
+  color: #3efa09;
 }
 .navbar-middle .navbar-middle-data p .red {
   color: rgb(255, 103, 103);
