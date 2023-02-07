@@ -14,7 +14,7 @@
 }
 
 body{
-    background: #151515;
+    background: #212121;
 }
 
 //navbar 
@@ -205,6 +205,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background: #151515;
 
     .left{
         display: flex;
@@ -258,8 +259,9 @@ body{
 
     .right{
         padding-top: 30px;
+        padding-bottom: 30px;
         img{
-            width: 700px;
+            width: 600px;
         }
     }
 
