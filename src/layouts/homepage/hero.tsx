@@ -17,10 +17,17 @@ function Hero() {
               <a href=""className='btns'>Learn More</a>
             </div>
 
+            {/* <div className="top-separator">
+              <div className="sep-left"></div>
+              <div className="sep-middle"><p>have a go at</p></div>
+              <div className="sep-right"></div>
+            </div>
+
+            <div className="networth-container">
+              <h4>Networth Tracker</h4>
+            </div> */}
+
           </div>
-
-          <div className="bottom"></div>
-
         </div>
 
         <div className="right">
