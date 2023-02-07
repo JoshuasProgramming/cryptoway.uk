@@ -218,6 +218,8 @@ body {
   justify-content: center;
   flex-direction: row;
   background: #151515;
+  background: linear-gradient(to left, #151515, #252525);
+  height: 680px;
 }
 .hero .left {
   display: flex;
@@ -226,29 +228,52 @@ body {
   flex-direction: column;
   width: 41%;
 }
-.hero .left h1 {
-  font-size: 50px;
-  font-family: "Unbounded", cursive;
-  color: #f2f2f2;
-  padding-bottom: 20px;
+.hero .left .top {
+  padding-bottom: 60px;
 }
-.hero .left p {
-  font-size: 25px;
+.hero .left .top .top-btn {
+  font-size: 15px;
   font-family: "Unbounded", cursive;
   font-weight: 300;
   color: #f2f2f2;
+  padding-bottom: 20px;
+  text-decoration: none;
+  -webkit-text-fill-color: rgba(205, 202, 202, 0.2980392157);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #2200ff);
+  -webkit-background-clip: text;
+}
+.hero .left .top .top-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hero .left .top h1 {
+  font-size: 50px;
+  font-family: "Unbounded", cursive;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(45deg, #fcfbfb, #5c5c5c);
+  -webkit-background-clip: text;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+.hero .left .top p {
+  font-size: 25px;
+  font-family: "Unbounded", cursive;
+  font-weight: 300;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(45deg, #fcfbfb, #c8c8c8);
+  -webkit-background-clip: text;
   padding-bottom: 10px;
 }
-.hero .left .btn-container {
+.hero .left .top .btn-container {
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: row;
 }
-.hero .left .btn-container .pd-right {
+.hero .left .top .btn-container .pd-right {
   margin-right: 50px;
 }
-.hero .left .btn-container a {
+.hero .left .top .btn-container .btns {
   margin-top: 20px;
   background: rgb(61, 61, 61) 99.4%;
   padding: 2.5%;
@@ -259,7 +284,7 @@ body {
   transition: 0.5s ease-in-out;
   text-decoration: none;
 }
-.hero .left .btn-container a:hover {
+.hero .left .top .btn-container .btns:hover {
   transition: 0.5s ease-in-out;
   background: rgb(36, 36, 36) 99.4%;
   cursor: pointer;
