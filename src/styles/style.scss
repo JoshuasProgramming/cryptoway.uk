@@ -247,13 +247,13 @@ body{
                 font-size: 18.5px;
                 font-family: $navbar-top-font;
                 color: $primary-white-color;
-                transition: 5s ease-in-out;
+                transition: .5s ease-in-out;
                 text-decoration: none;
             }
 
             a:hover{
-                transition: 5s ease-in-out;
-                 background: rgb(103, 103, 103) 99.4%;
+                transition: .5s ease-in-out;
+                 background: rgb(36, 36, 36) 99.4%;
                 cursor: pointer;
             }
         }
