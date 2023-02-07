@@ -200,14 +200,68 @@ body{
 
 }
 
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 
-.example{
-    z-index: 9999;
-    visibility: visible;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    margin: 0px;
-    transform: translate3d(708px, 42px, 0px);
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 41%;
+
+        h1{
+            font-size: 50px;
+            font-family: "Unbounded", cursive;
+            color: #f2f2f2;
+        }
+
+        p{
+            font-size: 25px;
+            font-family: "Unbounded", cursive;
+            font-weight: 300;
+            color: #f2f2f2;
+        }
+
+        .btn-container{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: row;
+
+            .pd-right{
+                margin-right: 50px;
+            }
+
+            a{
+                margin-top: 20px;
+                background: rgb(61, 61, 61) 99.4%;
+                padding: 2.5%;
+                border-radius: 15px;
+                font-size: 18.5px;
+                font-family: $navbar-top-font;
+                color: $primary-white-color;
+                transition: 5s ease-in-out;
+                text-decoration: none;
+            }
+
+            a:hover{
+                transition: 5s ease-in-out;
+                 background: rgb(103, 103, 103) 99.4%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right{
+        padding-top: 30px;
+        img{
+            width: 700px;
+        }
+    }
+
 }
 
