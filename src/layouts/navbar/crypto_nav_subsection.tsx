@@ -62,8 +62,6 @@ function Crypto_nav_subsection(props:any){
 
           </section>
         }
-
-
     </div>
     </>
   )

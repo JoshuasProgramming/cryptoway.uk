@@ -64,7 +64,7 @@ body{
         .crypto_nav_dropdown{
             width: 150px;
             padding: 10%;
-            background: linear-gradient(rgb(24, 24, 24) 0%, rgb(24, 24, 24) 0%);
+            background: $dropdown-bg;
             z-index: 2;
             border-radius: 15px;
             margin-top: 10px;
@@ -97,19 +97,19 @@ body{
                 }
 
                 .green{
-                    color: rgb(83, 219, 45);
+                    color: $primary-green-color
                 }
     
                 .green:hover{
-                    color: rgb(62, 250, 9);
+                    color: $primary-green-color-hover
                 }
     
                 .red{
-                    color:rgb(255, 103, 103);
+                    color:$primary-red-color;
                 }
     
                 .red:hover{
-                    color:rgb(252, 32, 32);
+                    color:$primary-red-color-hover;
                 }
             }
 
@@ -129,12 +129,10 @@ body{
 
 .navbar-bottom{
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include default-flexbox();
     flex-direction: row;
     width: -webkit-fill-available;
-    background: #1e1e1e;
+    background: $background-color_1;
     height: 80px;
     border-bottom: 1.5px solid #000;
 
