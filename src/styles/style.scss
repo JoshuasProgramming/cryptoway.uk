@@ -7,10 +7,8 @@
 //include fonts
 @import '../partials/fonts';
 
-@keyframes fadein {
-    0% { opacity:0;}
-    100% { opacity:1}
-}
+//include keyframes
+@import '../partials/keyframes';
 
 
 //default settings
@@ -240,6 +238,8 @@ body{
                 -webkit-text-fill-color: #cdcacabd;
                 background: -webkit-linear-gradient(45deg, #f2f2f2, #2200ff);
                 -webkit-background-clip: text;
+                animation-name: fadein;
+                animation-duration: 2.5s;
 
             
     
