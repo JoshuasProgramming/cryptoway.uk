@@ -4,6 +4,7 @@ import './styles/style.css';
 //import navbar component
 import Navbar from './layouts/Navbar';
 import Hero from './layouts/homepage/hero';
+import Info from './layouts/homepage/info';
 
 function App() {
 
@@ -14,7 +15,11 @@ function App() {
   }, []);
 
   return (
-    <><Navbar /><Hero /></>
+    <>
+    <Navbar />
+    <Hero />
+    <Info/>
+    </>
   )
 }
 

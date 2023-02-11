@@ -206,7 +206,7 @@ body{
     flex-direction: row;
     background: #151515;
     background: linear-gradient(to left, #151515, #252525);
-    height: 577px;
+    height: 670px;
 
 
     .left{
@@ -294,9 +294,39 @@ body{
         padding-top: 30px;
         padding-bottom: 30px;
         img{
-            width: 630px;
+            width: 700px;
         }
     }
 
 }
 
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 70px;
+    background: #1e1e1e;
+    background: linear-gradient(to left, #1e1e1e, #121212);
+    height: 300px;
+
+    .info-box{
+        width: 347px;
+        h1{
+            font-size: 30px;
+            font-family: $navbar-top-font;
+            text-align: center;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            background: -webkit-linear-gradient(45deg, $primary-white-color, #a2a1a1);
+            -webkit-background-clip: text;
+        }
+
+        p{
+            color: $primary-white-color;
+            font-family:$navbar-top-font;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+}
