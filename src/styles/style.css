@@ -216,8 +216,8 @@ body {
   justify-content: center;
   flex-direction: row;
   background: #151515;
-  background: linear-gradient(to left, #151515, #252525);
-  height: 670px;
+  background: linear-gradient(to left, #080808, #2c2c2c);
+  height: 685px;
 }
 .hero .left {
   display: flex;
@@ -300,10 +300,10 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0px 70px;
+  padding: 20px 70px 0px 70px;
   background: #1e1e1e;
   background: linear-gradient(to left, #1c1c1c, #171717);
-  height: 300px;
+  height: 250px;
 }
 .info .info-box {
   width: 347px;
