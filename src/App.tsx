@@ -5,6 +5,7 @@ import './styles/style.css';
 import Navbar from './layouts/Navbar';
 import Hero from './layouts/homepage/hero';
 import Info from './layouts/homepage/info';
+import Earn_today from './layouts/homepage/earn_today';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Navbar />
     <Hero />
     <Info/>
+    <Earn_today/>
     </>
   )
 }

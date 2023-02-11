@@ -322,4 +322,38 @@ body {
   font-size: 20px;
   text-align: center;
   padding-top: 20px;
+}
+
+.earn-today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 70px 50px 70px;
+  background: linear-gradient(to left, #1c1c1c, #171717);
+  height: 150px;
+}
+.earn-today h1 {
+  font-size: 30px;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #d4d3d3);
+  -webkit-background-clip: text;
+}
+.earn-today a {
+  margin-top: 20px;
+  background: rgb(61, 61, 61) 99.4%;
+  padding: 1.5%;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: "Unbounded", cursive;
+  color: #f2f2f2;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+}
+.earn-today a:hover {
+  transition: 0.5s ease-in-out;
+  background: rgb(36, 36, 36) 99.4%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
