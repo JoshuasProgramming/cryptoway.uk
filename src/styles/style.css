@@ -50,7 +50,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-middle {
+.nav-connect .navbar-middle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@ body {
   border-bottom: 1.5px solid black;
   border-top: 1.5px solid black;
 }
-.navbar-middle .navbar-middle-data {
+.nav-connect .navbar-middle .navbar-middle-data {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,29 +68,29 @@ body {
   padding-right: 32px;
   height: 65%;
 }
-.navbar-middle .navbar-middle-data p {
+.nav-connect .navbar-middle .navbar-middle-data p {
   color: #f2f2f2;
   font-family: "Unbounded", cursive;
   font-size: 10.5px;
   cursor: pointer;
 }
-.navbar-middle .navbar-middle-data p .green {
+.nav-connect .navbar-middle .navbar-middle-data p .green {
   color: #53db2d;
 }
-.navbar-middle .navbar-middle-data p .green:hover {
+.nav-connect .navbar-middle .navbar-middle-data p .green:hover {
   color: #3efa09;
 }
-.navbar-middle .navbar-middle-data p .red {
+.nav-connect .navbar-middle .navbar-middle-data p .red {
   color: #ff6767;
 }
-.navbar-middle .navbar-middle-data p .red:hover {
+.nav-connect .navbar-middle .navbar-middle-data p .red:hover {
   color: #fc2020;
 }
-.navbar-middle .navbar-middle-data img {
+.nav-connect .navbar-middle .navbar-middle-data img {
   width: 17px;
   height: 17px;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown {
   width: 150px;
   padding: 10%;
   background: linear-gradient(rgb(24, 24, 24) 0%, rgb(24, 24, 24) 0%);
@@ -113,43 +113,42 @@ body {
     opacity: 100;
   }
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div {
   padding-bottom: 15px;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div h3 {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div h3 {
   color: #f2f2f2;
   font-size: 12px;
   font-family: "Unbounded", cursive;
   text-align: center;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div p {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div p {
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
   text-align: center;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div .green {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div .green {
   color: #53db2d;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div .green:hover {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div .green:hover {
   color: #3efa09;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div .red {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div .red {
   color: #ff6767;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown div .red:hover {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div .red:hover {
   color: #fc2020;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline p {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline p {
   border-bottom: 1px solid rgb(208, 208, 208);
   padding-bottom: 15px;
   font-size: 15px;
 }
-.navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline h3 {
+.nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline h3 {
   text-align: center;
 }
-
-.navbar-bottom {
+.nav-connect .navbar-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,45 +157,45 @@ body {
   background: #1e1e1e;
   height: 80px;
 }
-.navbar-bottom .left h1 {
+.nav-connect .navbar-bottom .left h1 {
   font-size: 35px;
   font-family: "Unbounded", cursive;
   color: #f2f2f2;
 }
-.navbar-bottom .middle {
+.nav-connect .navbar-bottom .middle {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
   width: 600px;
 }
-.navbar-bottom .middle h3 {
+.nav-connect .navbar-bottom .middle h3 {
   font-size: 12px;
   font-family: "Unbounded", cursive;
   font-weight: 300;
   color: #f2f2f2;
   cursor: pointer;
 }
-.navbar-bottom .middle h3:hover {
+.nav-connect .navbar-bottom .middle h3:hover {
   color: #ffffff;
 }
-.navbar-bottom .right {
+.nav-connect .navbar-bottom .right {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 200px;
   display: none;
 }
-.navbar-bottom .right p {
+.nav-connect .navbar-bottom .right p {
   font-size: 15px;
   font-family: "Unbounded", cursive;
   color: #f2f2f2;
   cursor: pointer;
 }
-.navbar-bottom .right p:hover {
+.nav-connect .navbar-bottom .right p:hover {
   color: #b7b7b7;
 }
-.navbar-bottom .right a {
+.nav-connect .navbar-bottom .right a {
   background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
   padding: 5%;
   border-radius: 12px;
@@ -205,7 +204,7 @@ body {
   color: #f2f2f2;
   transition: 5s ease-in-out;
 }
-.navbar-bottom .right a:hover {
+.nav-connect .navbar-bottom .right a:hover {
   transition: 5s ease-in-out;
   background: radial-gradient(circle at 24.1% 68.8%, rgb(66, 65, 65) 0%, rgb(20, 20, 20) 99.4%);
   cursor: pointer;
@@ -303,7 +302,7 @@ body {
   flex-direction: row;
   padding: 0px 70px;
   background: #1e1e1e;
-  background: linear-gradient(to left, #1e1e1e, #121212);
+  background: linear-gradient(to left, #1c1c1c, #171717);
   height: 300px;
 }
 .info .info-box {
@@ -314,7 +313,7 @@ body {
   font-family: "Unbounded", cursive;
   text-align: center;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  background: -webkit-linear-gradient(45deg, #f2f2f2, #a2a1a1);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #d4d3d3);
   -webkit-background-clip: text;
 }
 .info .info-box p {

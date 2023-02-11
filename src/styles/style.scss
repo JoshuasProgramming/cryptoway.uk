@@ -22,86 +22,30 @@ body{
     @include navbar-top(true); //set to true or false if you want the cursor on navbar-top to be a pointer (true) or not to be a pointer (false)
 }
 
-.navbar-middle{
-    @include navbar-middle();
-
-    .navbar-middle-data{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding-right: 32px;
-        height: 65%;
-
-        p{
-            color: $primary-white-color;
-            font-family:$navbar-top-font;
-            font-size: 10.5px;
-            cursor: pointer;
-            
-            .green{
-                color: $primary-green-color;
-            }
-
-            .green:hover{
-                color: $primary-green-color-hover;
-            }
-
-            .red{
-                color:$primary-red-color;
-            }
-
-            .red:hover{
-                color:$primary-red-color-hover;
-            }
-        }
-
-        img{
-            width: 17px;
-            height: 17px;
-        }
-
-        .crypto_nav_dropdown{
-            width: 150px;
-            padding: 10%;
-            background: $dropdown-bg;
-            z-index: 2;
-            border-radius: 15px;
-            margin-top: 10px;
+.nav-connect{
+    .navbar-middle{
+        @include navbar-middle();
+    
+        .navbar-middle-data{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: column;
-            box-shadow: 1px 1px 10px 1px #363636;
-            animation-name: dropdown;
-            animation-duration: .5s;
-
-            @keyframes dropdown {
-                from{opacity: 0;}
-                to{opacity: 100;}
-            }
-
-            div{
-                padding-bottom: 15px;
-                h3{
-                    color: $primary-white-color;
-                    font-size: 12px;
-                    font-family: $navbar-top-font;
-                    text-align: center;
-                }
-                p{
-                    font-size: 15px;
-                    text-align: center;
-                    padding-top: 10px;
-                    text-align: center;
-                }
-
+            padding-right: 32px;
+            height: 65%;
+    
+            p{
+                color: $primary-white-color;
+                font-family:$navbar-top-font;
+                font-size: 10.5px;
+                cursor: pointer;
+                
                 .green{
-                    color: $primary-green-color
+                    color: $primary-green-color;
                 }
     
                 .green:hover{
-                    color: $primary-green-color-hover
+                    color: $primary-green-color-hover;
                 }
     
                 .red{
@@ -112,92 +56,152 @@ body{
                     color:$primary-red-color-hover;
                 }
             }
-
-            .underline {
-                p{
-                    border-bottom: 1px solid rgb(208, 208, 208);
+    
+            img{
+                width: 17px;
+                height: 17px;
+            }
+    
+            .crypto_nav_dropdown{
+                width: 150px;
+                padding: 10%;
+                background: $dropdown-bg;
+                z-index: 2;
+                border-radius: 15px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 1px 1px 10px 1px #363636;
+                animation-name: dropdown;
+                animation-duration: .5s;
+    
+                @keyframes dropdown {
+                    from{opacity: 0;}
+                    to{opacity: 100;}
+                }
+    
+                div{
                     padding-bottom: 15px;
-                    font-size: 15px;
-                }  
-                h3{
-                    text-align: center;
+                    h3{
+                        color: $primary-white-color;
+                        font-size: 12px;
+                        font-family: $navbar-top-font;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 15px;
+                        text-align: center;
+                        padding-top: 10px;
+                        text-align: center;
+                    }
+    
+                    .green{
+                        color: $primary-green-color
+                    }
+        
+                    .green:hover{
+                        color: $primary-green-color-hover
+                    }
+        
+                    .red{
+                        color:$primary-red-color;
+                    }
+        
+                    .red:hover{
+                        color:$primary-red-color-hover;
+                    }
+                }
+    
+                .underline {
+                    p{
+                        border-bottom: 1px solid rgb(208, 208, 208);
+                        padding-bottom: 15px;
+                        font-size: 15px;
+                    }  
+                    h3{
+                        text-align: center;
+                    }
                 }
             }
         }
     }
-}
-
-.navbar-bottom{
-
-    @include default-flexbox();
-    flex-direction: row;
-    width: -webkit-fill-available;
-    background: $background-color_1;
-    height: 80px;
-
-    .left{
-        h1{
-            font-size: 35px;
-            font-family: $navbar-top-font;
-            color: $primary-white-color;
-        }
-    }
-
-    .middle{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+    
+    .navbar-bottom{
+    
+        @include default-flexbox();
         flex-direction: row;
-        width: 600px;
-
-        h3{
-            font-size: 12px;
-            font-family: $navbar-top-font;
-            font-weight: 300;
-            color: $primary-white-color;
-            cursor: pointer;
+        width: -webkit-fill-available;
+        background: $background-color_1;
+        height: 80px;
+    
+        .left{
+            h1{
+                font-size: 35px;
+                font-family: $navbar-top-font;
+                color: $primary-white-color;
+            }
         }
-
-        h3:hover{
-            color: #ffffff;
+    
+        .middle{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            width: 600px;
+    
+            h3{
+                font-size: 12px;
+                font-family: $navbar-top-font;
+                font-weight: 300;
+                color: $primary-white-color;
+                cursor: pointer;
+            }
+    
+            h3:hover{
+                color: #ffffff;
+            }
         }
+    
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 200px;
+            display: none;
+    
+            p{
+                font-size: 15px;
+                font-family: $navbar-top-font;
+                color: $primary-white-color;
+                cursor: pointer;
+            }
+            p:hover{
+                color: #b7b7b7;
+            }
+    
+            a{
+                background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
+                padding: 5%;
+                border-radius: 12px;
+                font-size: 14px;
+                font-family: $navbar-top-font;
+                color: $primary-white-color;
+                transition: 5s ease-in-out;
+            }
+    
+            a:hover{
+                transition: 5s ease-in-out;
+                background: radial-gradient(circle at 24.1% 68.8%, rgb(66, 65, 65) 0%, rgb(20, 20, 20) 99.4%);
+                cursor: pointer;
+            }
+        }
+    
     }
-
-    .right{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 200px;
-        display: none;
-
-        p{
-            font-size: 15px;
-            font-family: $navbar-top-font;
-            color: $primary-white-color;
-            cursor: pointer;
-        }
-        p:hover{
-            color: #b7b7b7;
-        }
-
-        a{
-            background: radial-gradient(circle at 24.1% 68.8%, rgb(100, 100, 100) 0%, rgb(61, 61, 61) 99.4%);
-            padding: 5%;
-            border-radius: 12px;
-            font-size: 14px;
-            font-family: $navbar-top-font;
-            color: $primary-white-color;
-            transition: 5s ease-in-out;
-        }
-
-        a:hover{
-            transition: 5s ease-in-out;
-            background: radial-gradient(circle at 24.1% 68.8%, rgb(66, 65, 65) 0%, rgb(20, 20, 20) 99.4%);
-            cursor: pointer;
-        }
-    }
-
 }
+
+
 
 .hero{
     display: flex;
@@ -307,7 +311,7 @@ body{
     flex-direction: row;
     padding: 0px 70px;
     background: #1e1e1e;
-    background: linear-gradient(to left, #1e1e1e, #121212);
+    background: linear-gradient(to left, #1c1c1c, #171717);
     height: 300px;
 
     .info-box{
@@ -317,7 +321,7 @@ body{
             font-family: $navbar-top-font;
             text-align: center;
             -webkit-text-fill-color: rgba(0,0,0,0);
-            background: -webkit-linear-gradient(45deg, $primary-white-color, #a2a1a1);
+            background: -webkit-linear-gradient(45deg, $primary-white-color, #d4d3d3);
             -webkit-background-clip: text;
         }
 

@@ -14,8 +14,10 @@ function Navbar() {
   return (
     <React.Fragment>
     <Top/>
+    <div className="nav-connect">
     <Middle />
     <Bottom/>
+    </div>
     </React.Fragment>
   )
 }

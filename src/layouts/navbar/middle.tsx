@@ -8,6 +8,45 @@ import axios from 'axios';
 import Crypto_nav_subsection from './crypto_nav_subsection';
 
 function Middle(): JSX.Element | any {
+
+
+  // const removeNav = (boolean:boolean) => {
+  //   if(boolean == true){
+  //       let nav = document.getElementById('nav') as HTMLElement;
+  //       nav.style.transform = 'translateY(10px)';
+  //       nav.style.transition = '.25s ease-in-out';
+  //       nav.style.zIndex = '2';
+        
+  //   }
+  // }
+  
+  // const addNav = (boolean:boolean) => {
+  //   if(boolean == true){
+  //       let nav = document.getElementById('nav') as HTMLElement;
+  //       nav.style.display = 'flex';
+  //       nav.style.transition = '.25s ease-in-out';
+  //       nav.style.transform = 'translateY(0px)';
+  //   }
+  // }
+  
+  // useEffect(() =>{
+  //   let oldPos = 0;
+  //   let newPos = 0;
+  
+  //   window.addEventListener('scroll', function(e) {
+  //       newPos = window.pageYOffset;
+  
+  //       if(oldPos - newPos < 0){
+  //           removeNav(true)
+  //       } else if(oldPos - newPos > 0){
+  //           addNav(true)
+  //       }
+  
+  //       oldPos = newPos;
+  //   })
+  // })
+
+
   let count:number = 0;
 
   // data variable and setData function with initial value of nothing.
@@ -31,7 +70,7 @@ function Middle(): JSX.Element | any {
 
     //map through the data and insert specific values to the 'crypto_nav_subsection' component
     return (
-      <section className="navbar-middle">
+      <section className="navbar-middle" id="nav">
         {
           Object.assign(data)?.map((value:any, index:number) => (
             <Crypto_nav_subsection 
