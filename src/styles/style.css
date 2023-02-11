@@ -11,6 +11,14 @@
 * $cursorPointer is a parameter to set the pointer:cursor "ON" or "OFF
 */
 @import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -252,6 +260,8 @@ body {
   -webkit-background-clip: text;
   padding-bottom: 20px;
   padding-top: 15px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
 }
 .hero .left .top p {
   font-size: 26px;
@@ -261,12 +271,16 @@ body {
   background: -webkit-linear-gradient(45deg, #fcfbfb, #acacac);
   -webkit-background-clip: text;
   padding-bottom: 10px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
 }
 .hero .left .top .btn-container {
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: row;
+  animation-name: fadein;
+  animation-duration: 2.5s;
 }
 .hero .left .top .btn-container .pd-right {
   margin-right: 50px;
@@ -290,6 +304,8 @@ body {
 .hero .right {
   padding-top: 30px;
   padding-bottom: 30px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
 }
 .hero .right img {
   width: 700px;
@@ -304,6 +320,8 @@ body {
   background: #1e1e1e;
   background: linear-gradient(to left, #1c1c1c, #171717);
   height: 250px;
+  animation-name: fadein;
+  animation-duration: 2.5s;
 }
 .info .info-box {
   width: 347px;

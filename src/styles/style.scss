@@ -7,6 +7,11 @@
 //include fonts
 @import '../partials/fonts';
 
+@keyframes fadein {
+    0% { opacity:0;}
+    100% { opacity:1}
+}
+
 
 //default settings
 *{
@@ -252,6 +257,8 @@ body{
                 -webkit-background-clip: text;
                 padding-bottom: 20px;
                 padding-top: 15px;
+                animation-name: fadein;
+                animation-duration: 2.5s;
             }
     
             p{
@@ -262,6 +269,8 @@ body{
                 background: -webkit-linear-gradient(45deg,#fcfbfb,#acacac);
                 -webkit-background-clip: text;
                 padding-bottom: 10px;
+                animation-name: fadein;
+                animation-duration: 2.5s;
             }
     
             .btn-container{
@@ -269,6 +278,8 @@ body{
                 align-items: center;
                 justify-content: start;
                 flex-direction: row;
+                animation-name: fadein;
+                animation-duration: 2.5s;
     
                 .pd-right{
                     margin-right: 50px;
@@ -302,9 +313,11 @@ body{
         img{
             width: 700px;
         }
+        animation-name: fadein;
+        animation-duration: 2.5s;
     }
-
 }
+
 
 .info{
     display: flex;
@@ -315,6 +328,8 @@ body{
     background: #1e1e1e;
     background: linear-gradient(to left, #1c1c1c, #171717);
     height: 250px;
+    animation-name: fadein;
+    animation-duration: 2.5s;
 
     .info-box{
         width: 347px;
