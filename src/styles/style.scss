@@ -206,7 +206,7 @@ body{
     flex-direction: row;
     background: #151515;
     background: linear-gradient(to left, #151515, #252525);
-    height: 680px;
+    height: 577px;
 
 
     .left{
@@ -287,69 +287,7 @@ body{
                 }
             }
 
-            .top-separator{
-                box-sizing: border-box;
-                margin: 0;
-                min-width: 0;
-                display: flex;
-                margin-top: 16px;
-                margin-bottom: 16px;
-                -webkit-box-align: center;
-                align-items: center;
-                -webkit-box-pack: justify;
-                justify-content: space-between;
-                width: 450px;
-
-                .sep-left{
-                    box-sizing: border-box;
-                    margin: 0;
-                    min-width: 0;
-                    height: 1px;
-                    flex: 0.79;
-                    background-color: #474D57;
-                }
-
-                .sep-middle{
-                    margin-left: 8px;
-                    margin-right: 8px;
-                    p{
-                        font-size: 15px;
-                        font-family: $navbar-top-font;
-                        color: $primary-white-color;
-                        font-size: 12px;
-                        padding: 0;
-                        -webkit-text-fill-color: transparent;
-                        background: whitesmoke;
-                        -webkit-background-clip: text;
-                        margin: 0px 9px;
-                    }
-                }
-
-                .sep-right{
-                    box-sizing: border-box;
-                    margin: 0;
-                    min-width: 0;
-                    height: 1px;
-                    flex: 1;
-                    background-color: #474D57;
-                }
-            }
         }
-
-        .networth-container{
-            background: rgb(61, 61, 61) 99.4%;
-            padding: 2.5%;
-            border-radius: 5px;
-            font-size: 18.5px;
-            font-family: "Unbounded", cursive;
-            color: #f2f2f2;
-            transition: 0.5s ease-in-out;
-            text-decoration: none;
-            width: max-content;
-            margin: 25px 0px 0px 90px;
-        }
-
-        
     }
 
     .right{
