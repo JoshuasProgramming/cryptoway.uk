@@ -19,6 +19,14 @@
     opacity: 1;
   }
 }
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -112,14 +120,6 @@ body {
   box-shadow: 1px 1px 10px 1px #363636;
   animation-name: dropdown;
   animation-duration: 0.5s;
-}
-@keyframes dropdown {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
 }
 .nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown div {
   padding-bottom: 15px;
