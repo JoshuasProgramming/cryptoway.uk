@@ -54,6 +54,7 @@ function Middle(): JSX.Element | any {
 
   //variable to store the api link for the crypto coins
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=10&page=1&sparkline=false";
+  // const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=20&page=1&sparkline=false"
 
   //code to fetch the data from the 'url' variable
   useEffect(() => {

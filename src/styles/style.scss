@@ -16,6 +16,10 @@
     @include default;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     background: #212121;
 }
@@ -29,6 +33,7 @@ body{
 
     .navbar-middle{
         @include navbar-middle();
+
     
         .navbar-middle-data{
             display: flex;
@@ -127,6 +132,10 @@ body{
             }
         }
     }
+
+    .navbar-middle::-webkit-scrollbar{
+        display: none;
+      }
     
     .navbar-bottom{
     

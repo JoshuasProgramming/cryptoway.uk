@@ -32,6 +32,10 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: #212121;
 }
@@ -155,6 +159,9 @@ body {
 }
 .nav-connect .navbar-middle .navbar-middle-data .crypto_nav_dropdown .underline h3 {
   text-align: center;
+}
+.nav-connect .navbar-middle::-webkit-scrollbar {
+  display: none;
 }
 .nav-connect .navbar-bottom {
   display: flex;
