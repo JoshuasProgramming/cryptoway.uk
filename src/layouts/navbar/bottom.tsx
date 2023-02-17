@@ -11,7 +11,7 @@ function Bottom() {
       <div className="middle">
         <h3>Cryptocurrencies</h3>
         <h3>Exchanges</h3>
-        <h3>Networth Tracker</h3>
+        <h3>Additional</h3>
         <h3>Learn</h3>
       </div>
 
