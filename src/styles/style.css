@@ -601,8 +601,6 @@ body {
   color: #000000;
   margin: auto;
   margin-top: 60px;
-  box-shadow: 1px 1px 11px 1px rgba(3, 3, 3, 0.0901960784);
-  border-radius: 20px;
 }
 .popular table td, .popular table th {
   border-width: 1px;
