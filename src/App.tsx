@@ -8,6 +8,7 @@ import Info from './layouts/homepage/Info';
 import Need_help from './layouts/homepage/need_help';
 import Earn_today from './layouts/homepage/earn_today';
 import Annual from './layouts/homepage/annual/annual';
+import Popular from './layouts/homepage/popular';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <Annual/>
     <Need_help/>
     <Earn_today/>
+    <Popular/>
     </>
   )
 }

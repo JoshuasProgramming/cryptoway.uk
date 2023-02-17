@@ -570,4 +570,18 @@ body {
   -webkit-text-fill-color: rgba(205, 202, 202, 0.7411764706);
   background: -webkit-linear-gradient(45deg, #f2f2f2, #2200ff);
   -webkit-background-clip: text;
+}
+
+.popular table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.popular th, .popular td {
+  text-align: left;
+  padding: 8px;
+}
+.popular tr:nth-child(even) {
+  background-color: #f2f2f2;
 }/*# sourceMappingURL=style.css.map */
