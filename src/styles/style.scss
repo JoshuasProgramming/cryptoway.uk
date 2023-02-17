@@ -392,7 +392,33 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
 
-    .need-help-parent{}
+    .need-help-heading{
 
-    .need-help-childern{}
+    }
+
+    .need-help-parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        .need-help-childern{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            
+            .left{
+                img{
+
+                }
+            }
+
+            .right{
+
+            }
+        }
+    }
+
+
 }
