@@ -132,10 +132,6 @@ body{
             }
         }
     }
-
-    .navbar-middle::-webkit-scrollbar{
-        display: none;
-      }
     
     .navbar-bottom{
     
@@ -208,10 +204,7 @@ body{
         }
     
     }
-
 }
-
-
 
 .hero{
     display: flex;
@@ -293,9 +286,9 @@ body{
                 .btns{
                     margin-top: 20px;
                     background: rgb(61, 61, 61) 99.4%;
-                    padding: 2.5%;
+                    padding: 2%;
                     border-radius: 15px;
-                    font-size: 18.5px;
+                    font-size: 18px;
                     font-family: $navbar-top-font;
                     color: $primary-white-color;
                     transition: .5s ease-in-out;
@@ -322,7 +315,6 @@ body{
         animation-duration: 3s;
     }
 }
-
 
 .info{
     display: flex;
