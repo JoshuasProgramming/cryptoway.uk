@@ -22,9 +22,9 @@ function App() {
     <Navbar />
     <Hero />
     <Info/>
+    <Annual/>
     <Need_help/>
     <Earn_today/>
-    <Annual/>
     </>
   )
 }

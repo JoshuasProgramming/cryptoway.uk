@@ -34,7 +34,10 @@ function Annual(): JSX.Element | any {
 
     return(
         <section className="annual">
-            <div className="annual-heading"></div>
+            <div className="annual-heading">
+                <h1>Annual Growth</h1>
+                <p>Cryptocurrencies have shown remarkable growth, and investors are curious about their long-term potential.</p>
+            </div>
 
             <div className="annual-parent">
                 {
