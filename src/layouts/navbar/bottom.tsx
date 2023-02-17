@@ -2,42 +2,6 @@
 import React, { useEffect } from 'react'
 
 function Bottom() {
-
-  // const removeNav = (boolean:boolean) => {
-  //   if(boolean == true){
-  //       let nav = document.getElementById('nav') as HTMLElement;
-  //       nav.style.transform = 'translateY(200px)';
-  //       nav.style.transition = '.25s ease-in-out';
-  //   }
-  // }
-  
-  // const addNav = (boolean:boolean) => {
-  //   if(boolean == true){
-  //       let nav = document.getElementById('nav') as HTMLElement;
-  //       nav.style.display = 'flex';
-  //       nav.style.transition = '.25s ease-in-out';
-  //       nav.style.transform = 'translateY(0px)';
-  //   }
-  // }
-  
-  // useEffect(() =>{
-  //   let oldPos = 0;
-  //   let newPos = 0;
-  
-  //   window.addEventListener('scroll', function(e) {
-  //       newPos = window.pageYOffset;
-  
-  //       if(oldPos - newPos < 0){
-  //           removeNav(true)
-  //       } else if(oldPos - newPos > 0){
-  //           addNav(true)
-  //       }
-  
-  //       oldPos = newPos;
-  //   })
-  // })
-
-
   return (
     <section className="navbar-bottom" id='nav'>
       <div className="left">
