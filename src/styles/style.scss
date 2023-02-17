@@ -385,3 +385,14 @@ body{
         cursor: pointer;
     }
 }
+
+.need-help{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .need-help-parent{}
+
+    .need-help-childern{}
+}
