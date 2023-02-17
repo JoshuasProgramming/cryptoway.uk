@@ -41,8 +41,9 @@ function Annual(): JSX.Element | any {
                 Object.assign(data)?.map((value:any, index:number) => (
                     <Annual_comp 
                     key={value.symbol} 
+                    image={value.image}
+                    name={value.symbol}
                     annual={value.price_change_percentage_1y_in_currency}
-                    
                     />
                 ))
                 }
