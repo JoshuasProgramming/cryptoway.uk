@@ -213,7 +213,7 @@ body{
     flex-direction: row;
     background: #151515;
     background: linear-gradient(to left, #080808, #2c2c2c);
-    height: 685px;
+    height: 625px;
 
 
     .left{
@@ -323,13 +323,13 @@ body{
     flex-direction: row;
     padding: 20px 70px 0px 70px;
     background: #1e1e1e;
-    background: linear-gradient(to left, #1c1c1c, #171717);
+    background: linear-gradient(to left, #080808, #2c2c2c);
     height: 250px;
-    animation-name: fadein;
-    animation-duration: 2.5s;
 
     .info-box{
         width: 347px;
+        animation-name: fadein;
+        animation-duration: 2.5s;
         h1{
             font-size: 30px;
             font-family: $navbar-top-font;
@@ -354,12 +354,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 70px 50px 70px;
-    background: linear-gradient(to left, #1c1c1c, #171717);
+    padding: 60px 70px 50px 70px;
+    background: linear-gradient(to left, #191919, #191919);
     height: 150px;
 
     h1{
-        font-size: 30px;
+        font-size: 35px;
         font-family: $navbar-top-font;
         text-align: center;
         -webkit-text-fill-color: rgba(0,0,0,0);
@@ -370,9 +370,9 @@ body{
     a{
         margin-top: 20px;
         background: rgb(61, 61, 61) 99.4%;
-        padding: 1.5%;
+        padding: 1%;
         border-radius: 15px;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Unbounded", cursive;
         color: #f2f2f2;
         transition: 0.5s ease-in-out;
