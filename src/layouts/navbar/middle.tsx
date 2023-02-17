@@ -27,8 +27,6 @@ function Middle(): JSX.Element | any {
     })
   }, [])
 
-  console.log(data);
-
   //when the count is zero and the data isn't 'undefined'...
   if((count == 0) && data !== undefined){
     count = count + 1;

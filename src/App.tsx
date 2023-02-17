@@ -4,9 +4,10 @@ import './styles/style.css';
 //import navbar component
 import Navbar from './layouts/Navbar';
 import Hero from './layouts/homepage/hero';
-import Info from './layouts/homepage/info';
+import Info from './layouts/homepage/Info';
 import Need_help from './layouts/homepage/need_help';
 import Earn_today from './layouts/homepage/earn_today';
+import Annual from './layouts/homepage/annual/annual';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <Info/>
     <Need_help/>
     <Earn_today/>
+    <Annual/>
     </>
   )
 }
