@@ -354,8 +354,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 60px 70px 50px 70px;
-    background: linear-gradient(to left, #191919, #191919);
+    padding: 100px 70px 50px 70px;
+    background: linear-gradient(to left, #131313, #131313);
     height: 150px;
 
     h1{
@@ -391,15 +391,15 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    padding: 60px 90px 50px 90px;
+    padding: 60px 90px 105px 90px;
     background: linear-gradient(to left, #191919, #191919);
-    height: 270px;
+    height: 300px;
     margin: auto;
 
     .need-help-heading{
         display: flex;
         align-self: baseline;
-        padding-bottom: 50px;
+        padding: 80px 0px 70px 0px;
 
         h1{
             font-size: 35px;
@@ -438,6 +438,7 @@ body{
                 align-items: baseline;
                 justify-content: space-evenly;
                 flex-direction: column;
+                max-width: 800px;
 
                 h3{
                     font-size: 30px;
