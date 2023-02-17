@@ -23,10 +23,10 @@ function App() {
     <Navbar />
     <Hero />
     <Info/>
+    <Popular/>
     <Annual/>
     <Need_help/>
     <Earn_today/>
-    <Popular/>
     </>
   )
 }

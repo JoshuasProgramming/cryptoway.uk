@@ -572,16 +572,92 @@ body {
   -webkit-background-clip: text;
 }
 
+.popular {
+  height: 1000px;
+  margin: auto;
+  background: linear-gradient(to left, #191919, #191919);
+  padding: 60px 90px 85px 90px;
+}
+.popular .popular-heading {
+  display: flex;
+  align-self: baseline;
+  padding: 80px 0px 70px 0px;
+}
+.popular .popular-heading h1 {
+  font-size: 35px;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #d4d3d3);
+  -webkit-background-clip: text;
+}
 .popular table {
-  border-collapse: collapse;
-  border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0);
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: rgba(25, 25, 25, 0);
+  border-style: solid;
+  color: #000000;
+  margin: auto;
+  margin-top: 60px;
 }
-.popular th, .popular td {
-  text-align: left;
-  padding: 8px;
+.popular table td, .popular table th {
+  border-width: 1px;
+  border-color: rgba(25, 25, 25, 0);
+  border-style: solid;
+  padding: 3px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #d4d3d3);
+  -webkit-background-clip: text;
 }
-.popular tr:nth-child(even) {
-  background-color: #f2f2f2;
+.popular table td {
+  padding: 5px 80px 20px 80px;
+  font-size: 15px;
+}
+.popular table td img {
+  width: 50px;
+  height: 50px;
+}
+.popular table td .green {
+  color: #53db2d;
+  font-size: 18px;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  letter-spacing: 1.5px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #53db2d, #53db2d);
+  -webkit-background-clip: text;
+}
+.popular table td .red {
+  color: #ff6767;
+  font-size: 18px;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  letter-spacing: 1.5px;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #ff6767, #ff6767);
+  -webkit-background-clip: text;
+}
+.popular table .test {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: unset;
+}
+.popular table .test span {
+  font-size: 10px;
+}
+.popular table .thead th {
+  font-size: 15px;
+  font-weight: 100;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(45deg, #f2f2f2, #7a7a7a);
+  -webkit-background-clip: text;
+  padding-bottom: 35px;
 }/*# sourceMappingURL=style.css.map */

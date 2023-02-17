@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
+import { Sparklines, SparklinesLine } from "react-sparklines";
+
+
 function Popular(): JSX.Element | any {
 
     let count:number = 0;
@@ -32,23 +35,33 @@ function Popular(): JSX.Element | any {
                 </div>
 
                 <table>
-                    <tr>
+                    <tr className='thead'>
                         <th>#</th>
                         <th>Name</th>
                         <th>Price</th>
                         <th>24h Change</th>
-                        <th>Chart</th>
+                        {/* <th>Chart</th> */}
                         <th>Market Cap</th>
                     </tr>
                     {
                     Object.assign(data)?.map((value:any, index:number) => (
-                        <tr>
+                        <tr className='data'>
                         <td>{value.market_cap_rank}</td>   
-                        <td>{value.symbol}</td>    
-                        <td>{value.current_price}</td>
-                        <td>{value.price_change_percentage_24h}</td>
+                        <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol}</span></td>    
+                        <td>£{value.current_price}</td>
+
+                        {
+                        value.price_change_percentage_24h < 0.00 ?
+
+                        <td> <h1 className='red'>{value.price_change_percentage_24h }</h1></td>
+
+                        :
+
+                        <td ><h1 className='green'>{value.price_change_percentage_24h }</h1></td>
+                        }
                         
-                        <td>{value.market_cap}</td>
+                        
+                        <td>£{value.market_cap.toLocaleString("en-US")}</td>
                         </tr>                    
                     ))
                     }
