@@ -448,6 +448,13 @@ body{
             justify-content: center;
             flex-direction: column;
             box-shadow: 1px 1px 11px 1px #131313;
+            transition: 0.5s ease-in-out;
+
+            &:hover{
+                transition: 0.5s ease-in-out;
+                background: #303030 9.4%;
+                cursor: pointer;
+            }
 
             img{
                 width: 85px;
