@@ -423,10 +423,13 @@ body{
             justify-content: space-evenly;
             flex-direction: row;
             padding-right: 40px;
+            max-width: 800px;
 
             .left{
                 img{
-
+                    filter: invert(.9);
+                    padding-right: 40px;
+                    display: flex;
                 }
             }
 
