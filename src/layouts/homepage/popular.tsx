@@ -48,16 +48,16 @@ function Popular(): JSX.Element | any {
                         <tr className='data'>
                         <td>{value.market_cap_rank}</td>   
                         <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol}</span></td>    
-                        <td>£{value.current_price}</td>
+                        <td>£{value.current_price.toLocaleString("en-US")}</td>
 
                         {
                         value.price_change_percentage_24h < 0.00 ?
 
-                        <td> <h1 className='red'>{value.price_change_percentage_24h }</h1></td>
+                        <td> <h1 className='red'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
 
                         :
 
-                        <td ><h1 className='green'>{value.price_change_percentage_24h }</h1></td>
+                        <td ><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
                         }
                         
                         

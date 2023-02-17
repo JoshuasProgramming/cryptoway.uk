@@ -573,7 +573,7 @@ body {
 }
 
 .popular {
-  height: 1000px;
+  height: 1200px;
   margin: auto;
   background: linear-gradient(to left, #191919, #191919);
   padding: 60px 90px 85px 90px;
@@ -616,7 +616,7 @@ body {
   -webkit-background-clip: text;
 }
 .popular table td {
-  padding: 5px 80px 20px 80px;
+  padding: 25px 80px 20px 80px;
   font-size: 15px;
 }
 .popular table td img {
@@ -643,6 +643,10 @@ body {
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   background: -webkit-linear-gradient(45deg, #ff6767, #ff6767);
   -webkit-background-clip: text;
+}
+.popular table .data:hover {
+  background: rgb(27, 27, 27);
+  cursor: pointer;
 }
 .popular table .test {
   display: flex;
