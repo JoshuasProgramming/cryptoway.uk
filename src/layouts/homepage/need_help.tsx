@@ -15,7 +15,7 @@ function Need_help() {
                 <div className="right">
                     <h3></h3>
                     <p></p>
-                    <a href="">Learn more</a>
+                    <a>Learn more</a>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ function Need_help() {
                 <div className="right">
                     <h3></h3>
                     <p></p>
-                    <a href="">Learn more</a>
+                    <a>Learn more</a>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ function Need_help() {
                 <div className="right">
                     <h3></h3>
                     <p></p>
-                    <a href="">Learn more</a>
+                    <a>Learn more</a>
                 </div>
             </div>
         </div>
