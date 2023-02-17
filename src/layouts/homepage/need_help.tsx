@@ -14,7 +14,7 @@ function Need_help() {
                 <div className="left"><img src="" alt="" /></div>
                 <div className="right">
                     <h3>FAQs</h3>
-                    <p>Before reaching out to our support team, we recommend checking our frequently asked questions (FAQs) page. We've compiled answers to the most common questions our users ask, so you may find the information you need there.</p>
+                    <p>Before reaching out to our support team, we recommend checking our frequently asked questions (FAQs) page. </p>
                     <a>Learn more</a>
                 </div>
             </div>
@@ -22,8 +22,8 @@ function Need_help() {
             <div className="need-help-children">
                 <div className="left"><img src="" alt="" /></div>
                 <div className="right">
-                    <h3>Support Team</h3>
-                    <p>If you still have questions after reviewing our FAQs and knowledge base, our support team is ready to assist you. You can contact us via email, phone, or live chat, and we'll do our best to help you as quickly as possible.</p>
+                    <h3>SUPPORT TEAMS</h3>
+                    <p>You can contact us via email, phone, or live chat, and we'll do our best to help you as quickly as possible.</p>
                     <a>Learn more</a>
                 </div>
             </div>
@@ -31,8 +31,8 @@ function Need_help() {
             <div className="need-help-children">
                 <div className="left"><img src="" alt="" /></div>
                 <div className="right">
-                    <h3>Security</h3>
-                    <p>At CryptoWay, we take the security of our users' assets very seriously. If you're concerned about the safety of your account or want to learn more about our security measures, please see our security page or contact our support team.</p>
+                    <h3>SECURITY</h3>
+                    <p>At CryptoWay, we take the security of our users' assets very seriously.</p>
                     <a>Learn more</a>
                 </div>
             </div>

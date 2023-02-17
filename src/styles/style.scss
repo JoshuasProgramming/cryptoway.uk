@@ -391,9 +391,24 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    padding: 60px 90px 50px 90px;
+    background: linear-gradient(to left, #191919, #191919);
+    height: 270px;
+    margin: auto;
 
     .need-help-heading{
+        display: flex;
+        align-self: baseline;
+        padding-bottom: 50px;
 
+        h1{
+            font-size: 35px;
+            font-family: $navbar-top-font;
+            text-align: center;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            background: -webkit-linear-gradient(45deg, $primary-white-color, #d4d3d3);
+            -webkit-background-clip: text;
+        }
     }
 
     .need-help-parent{
@@ -402,12 +417,13 @@ body{
         justify-content: space-evenly;
         flex-direction: row;
 
-        .need-help-childern{
+        .need-help-children{
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             flex-direction: row;
-            
+            padding-right: 40px;
+
             .left{
                 img{
 
@@ -415,6 +431,44 @@ body{
             }
 
             .right{
+                display: flex;
+                align-items: baseline;
+                justify-content: space-evenly;
+                flex-direction: column;
+
+                h3{
+                    font-size: 30px;
+                    font-family: $navbar-top-font;
+                    text-align: center;
+                    -webkit-text-fill-color: rgba(0,0,0,0);
+                    background: -webkit-linear-gradient(45deg, $primary-white-color, #d4d3d3);
+                    -webkit-background-clip: text;
+                    display: flex;
+                    font-weight: 900;
+                    padding-bottom: 20px;
+                }
+
+                p{
+                    font-size: 20px;
+                    font-family: "Unbounded",cursive;
+                    font-weight: 300;
+                    -webkit-text-fill-color: rgba(0,0,0,0);
+                    background: -webkit-linear-gradient(45deg, #e1e1e1, #e1e1e1);
+                    -webkit-background-clip: text;
+                    padding-bottom: 20px;
+                }
+
+                a{
+                    font-size: 20px;
+                    font-family: "Unbounded",cursive;
+                    font-weight: 400;
+                    color: #f2f2f2;
+                    padding-bottom: 20px;
+                    text-decoration: none;
+                    -webkit-text-fill-color: rgba(205,202,202,.7411764706);
+                    background: -webkit-linear-gradient(45deg, #f2f2f2, #2200ff);
+                    -webkit-background-clip: text;
+                }
 
             }
         }
