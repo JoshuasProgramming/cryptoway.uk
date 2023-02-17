@@ -9,44 +9,6 @@ import Crypto_nav_subsection from './crypto_nav_subsection';
 
 function Middle(): JSX.Element | any {
 
-
-  // const removeNav = (boolean:boolean) => {
-  //   if(boolean == true){
-  //       let nav = document.getElementById('nav') as HTMLElement;
-  //       nav.style.transform = 'translateY(10px)';
-  //       nav.style.transition = '.25s ease-in-out';
-  //       nav.style.zIndex = '2';
-        
-  //   }
-  // }
-  
-  // const addNav = (boolean:boolean) => {
-  //   if(boolean == true){
-  //       let nav = document.getElementById('nav') as HTMLElement;
-  //       nav.style.display = 'flex';
-  //       nav.style.transition = '.25s ease-in-out';
-  //       nav.style.transform = 'translateY(0px)';
-  //   }
-  // }
-  
-  // useEffect(() =>{
-  //   let oldPos = 0;
-  //   let newPos = 0;
-  
-  //   window.addEventListener('scroll', function(e) {
-  //       newPos = window.pageYOffset;
-  
-  //       if(oldPos - newPos < 0){
-  //           removeNav(true)
-  //       } else if(oldPos - newPos > 0){
-  //           addNav(true)
-  //       }
-  
-  //       oldPos = newPos;
-  //   })
-  // })
-
-
   let count:number = 0;
 
   // data variable and setData function with initial value of nothing.
