@@ -47,7 +47,7 @@ function Popular(): JSX.Element | any {
                     Object.assign(data)?.map((value:any, index:number) => (
                         <tr className='data'>
                         <td>{value.market_cap_rank}</td>   
-                        <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol}</span></td>    
+                        <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>    
                         <td>£{value.current_price.toLocaleString("en-US")}</td>
 
                         {
