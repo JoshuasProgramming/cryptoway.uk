@@ -79,8 +79,8 @@ function Popular(): JSX.Element | any {
                         <td ><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
                         }
                         
-                        <td>{getUnit(value.total_volume)}</td>
-                        <td>£{getUnit(value.market_cap).toLocaleString("en-US")}</td>
+                        <td><strong>{getUnit(value.total_volume)}</strong></td>
+                        <td><strong>£{getUnit(value.market_cap).toLocaleString("en-US")}</strong></td>
                         </tr>                    
                     ))
                     }
