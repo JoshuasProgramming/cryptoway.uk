@@ -6,6 +6,24 @@ import { Sparklines, SparklinesLine } from "react-sparklines";
 
 function Popular(): JSX.Element | any {
 
+
+    let getUnit = (num:any) => {
+        // Nine Zeroes for Billions
+        return Math.abs(Number(num)) >= 1.0e+9
+
+        ? (Math.abs(Number(num)) / 1.0e+9).toFixed(2) + "B"
+        // Six Zeroes for Millions 
+        : Math.abs(Number(num)) >= 1.0e+6
+
+        ? (Math.abs(Number(num)) / 1.0e+6).toFixed(2) + "M"
+        // Three Zeroes for Thousands
+        : Math.abs(Number(num)) >= 1.0e+3
+
+        ? (Math.abs(Number(num)) / 1.0e+3).toFixed(2) + "K"
+
+        : Math.abs(Number(num));
+    }
+
     let count:number = 0;
 
     // data variable and setData function with initial value of nothing.
@@ -41,7 +59,7 @@ function Popular(): JSX.Element | any {
                         <th>Name</th>
                         <th>Price</th>
                         <th>24h Change</th>
-                        {/* <th>Chart</th> */}
+                        <th>Total Volume</th>
                         <th>Market Cap</th>
                     </tr>
                     {
@@ -61,8 +79,8 @@ function Popular(): JSX.Element | any {
                         <td ><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
                         }
                         
-                        
-                        <td>£{value.market_cap.toLocaleString("en-US")}</td>
+                        <td>{getUnit(value.total_volume)}</td>
+                        <td>£{getUnit(value.market_cap).toLocaleString("en-US")}</td>
                         </tr>                    
                     ))
                     }
