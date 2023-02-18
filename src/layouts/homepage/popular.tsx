@@ -32,6 +32,7 @@ function Popular(): JSX.Element | any {
             <section className="popular">
                 <div className="popular-heading">
                     <h1>Popular Cryptocurrencies</h1>
+                    <a>View all markets &#10148;</a>
                 </div>
 
                 <table>

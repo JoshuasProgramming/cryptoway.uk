@@ -594,6 +594,11 @@ body{
                     -webkit-background-clip: text;
                 }
 
+                a:hover{
+                    cursor:pointer;
+                    text-decoration: underline;
+                }
+
             }
         }
     }
@@ -611,6 +616,7 @@ body{
         display: flex;
         align-self: baseline;
         padding: 80px 0px 70px 0px;
+        justify-content: space-between;
 
         h1{
             font-size: 35px;
@@ -619,6 +625,23 @@ body{
             -webkit-text-fill-color: rgba(0,0,0,0);
             background: -webkit-linear-gradient(45deg, $primary-white-color, #d4d3d3);
             -webkit-background-clip: text;
+        }
+
+        a{
+            font-size: 15px;
+            font-family: "Unbounded", cursive;
+            font-weight: 400;
+            color: #f2f2f2;
+            padding-bottom: 20px;
+            text-decoration: none;
+            -webkit-text-fill-color: rgba(205, 202, 202, 0.7411764706);
+            background: -webkit-linear-gradient(45deg, #f2f2f2, #2200ff);
+            -webkit-background-clip: text;
+        }
+
+        a:hover{
+            cursor:pointer;
+            text-decoration: underline;
         }
     }
 
