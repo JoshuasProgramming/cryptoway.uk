@@ -21,4 +21,4 @@ function annual_comp(props:any) {
   )
 }
 
-export default annual_comp
+export default annual_comp;
