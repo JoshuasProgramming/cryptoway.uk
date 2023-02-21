@@ -65,24 +65,54 @@ function Popular(): JSX.Element | any {
                     </tr>
                     {
                     Object.assign(data)?.map((value:any, index:number) => (
-                        <tr className='data'>
-                        <td>{value.market_cap_rank}</td>   
-                        <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>    
-                        <td><strong>£{value.current_price.toLocaleString("en-US")}</strong></td>
-
-                        {
-                        value.price_change_percentage_24h < 0.00 ?
-
-                        <td> <h1 className='red'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
-
-                        :
-
-                        <td ><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
-                        }
                         
-                        <td><strong>{getUnit(value.total_volume)}</strong></td>
-                        <td><strong>£{getUnit(value.market_cap).toLocaleString("en-US")}</strong></td>
-                        </tr>                    
+                        // <Link to="../pages/Read_more" state={
+                        //         {rank: value.rank, title: value.title, date:value.date, image: value.image.src, alt: value.image.alt, code_snippet1: value.code_snippet1, 
+                        //         paragraph1: value.paragraph1, paragraph2: value.paragraph2, heading1_text: value.heading1_text, paragraph1_text: value.paragraph1_text, 
+                        //         code_snippet2: value.code_snippet2, heading2_text: value.heading2_text, paragraph2_text: value.paragraph2_text, 
+                        //         githubRepo: value.githubRepo, openLink: value.openLink, language1: value.language1, language2: value.language2, 
+                        //         language3: value.language3, language4: value.language4, language5:value.language5}} 
+                        //         style={{ textDecoration: 'none' }}  >Read more &#x27a4;</Link>
+                        
+                        <>
+                            {/* <Link to="./pages/coin_page" state={{ market_cap: value.market_cap_rank }}> */}
+                                <tr className='data'>
+                                    <td>{value.market_cap_rank}</td>
+                                    <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>
+                                    <td><strong>£{value.current_price.toLocaleString("en-US")}</strong></td>
+
+                                    {value.price_change_percentage_24h < 0.00 ?
+
+                                        <td> <h1 className='red'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
+
+                                        :
+
+                                        <td><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
+                                    }
+
+                                    <td><strong>{getUnit(value.total_volume)}</strong></td>
+                                    <td><strong>£{getUnit(value.market_cap).toLocaleString("en-US")}</strong></td>
+                                </tr>
+                            {/* </Link> */}
+                        </>
+                        // <tr className='data'>
+                        // <td>{value.market_cap_rank}</td>   
+                        // <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>    
+                        // <td><strong>£{value.current_price.toLocaleString("en-US")}</strong></td>
+
+                        // {
+                        // value.price_change_percentage_24h < 0.00 ?
+
+                        // <td> <h1 className='red'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
+
+                        // :
+
+                        // <td ><h1 className='green'>{value.price_change_percentage_24h.toFixed(2)}%</h1></td>
+                        // }
+                        
+                        // <td><strong>{getUnit(value.total_volume)}</strong></td>
+                        // <td><strong>£{getUnit(value.market_cap).toLocaleString("en-US")}</strong></td>
+                        // </tr>                    
                     ))
                     }
                 </table>

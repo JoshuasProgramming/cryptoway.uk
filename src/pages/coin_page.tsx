@@ -1,8 +1,12 @@
-import React from 'react'
+//import react
+import React, { useEffect , useState} from 'react';
 
-function Coin_page() {
+//import uselocation => allows us to get props from different components
+import { useLocation } from 'react-router-dom'
+
+function Coin_page(props:any) {
   return (
-    <div>coin_page</div>
+    <p>{props.market_cap}</p>
   )
 }
 
