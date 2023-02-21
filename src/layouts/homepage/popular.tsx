@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
-import { Sparklines, SparklinesLine } from "react-sparklines";
+//import react router from 'react-router
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 
 function Popular(): JSX.Element | any {
