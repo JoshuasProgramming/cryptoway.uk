@@ -507,14 +507,13 @@ body{
 }
 
 .need-help{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    
     padding: 60px 90px 105px 90px;
     background: linear-gradient(to left, #191919, #191919);
     height: 300px;
     margin: auto;
+
+    @include display-flex(center, space-between, column);
 
     .need-help-heading{
         display: flex;
@@ -532,10 +531,7 @@ body{
     }
 
     .need-help-parent{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
+        @include display-flex(center, space-evenly, row);
 
         .need-help-children{
             display: flex;

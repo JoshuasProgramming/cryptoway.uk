@@ -67,3 +67,10 @@
     border-bottom: 1.5px solid black;
     border-top: 1.5px solid black;
 }
+
+@mixin display-flex($align-items, $justify-content, $flex-direction){
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}
