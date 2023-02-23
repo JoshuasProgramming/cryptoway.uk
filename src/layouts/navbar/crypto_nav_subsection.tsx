@@ -1,5 +1,5 @@
 //import react
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 function Crypto_nav_subsection(props:any){
 

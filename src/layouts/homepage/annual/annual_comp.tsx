@@ -1,9 +1,12 @@
 //import react
 import React from 'react'
 
+//import react router from 'react-router
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 function annual_comp(props:any) {
   return (
-    <section className='annual-children'>
+      <section className='annual-children'>
         <img src={props.image} alt={props.name + " image"} />
         <h3>{props.name}</h3>
         <h2>APR</h2>
@@ -17,7 +20,7 @@ function annual_comp(props:any) {
         <h1 className='green'>{props.annual.toFixed(3)}%</h1>
         }
         
-    </section>
+      </section>
   )
 }
 
