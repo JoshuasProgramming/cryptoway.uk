@@ -30,6 +30,7 @@ function Popular(): JSX.Element | any {
     // data variable and setData function with initial value of nothing.
     const [data, setData] = useState();
 
+
     //variable to store the api link for the crypto coins
     const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=gbp&order=market_cap_desc&per_page=10&page=1&sparkline=true&price_change_percentage=1y";
 
@@ -65,7 +66,7 @@ function Popular(): JSX.Element | any {
                     </tr>
                     {
                     Object.assign(data)?.map((value:any, index:number) => (
-                        <tr className='data'>
+                        <tr className='data' onClick={() => <Link to={'../pages/coin_page'}></Link>}>
                         <td>{value.market_cap_rank}</td>   
                         <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>    
                         <td><strong>£{value.current_price.toLocaleString("en-US")}</strong></td>
