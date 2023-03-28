@@ -700,6 +700,17 @@ body{
                 background: -webkit-linear-gradient(45deg, $primary-red-color, $primary-red-color);
                 -webkit-background-clip: text;
             }
+
+            .grey{
+                color: $primary-grey-color;
+                font-size: 18px;
+                font-family: "Unbounded",cursive;
+                text-align: center;
+                letter-spacing: 1.5px;
+                -webkit-text-fill-color: #1e1e1e00;
+                background: -webkit-linear-gradient(45deg, #1e1e1e2e, #1e1e1e2e);
+                -webkit-background-clip: text;
+            }
         }
 
         .data:hover{

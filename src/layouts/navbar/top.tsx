@@ -1,4 +1,4 @@
-//import useState
+//import useState state
 import React, { useState } from 'react'
 
 function Top(): JSX.Element {
