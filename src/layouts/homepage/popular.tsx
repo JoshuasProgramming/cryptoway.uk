@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function Popular(): JSX.Element | any {
 
-
+    //'getUnit' function will take a number and return B for billions, M for Millions and K for thousands
+    //e.g if we run getUnit(1000000) it'll return 1M
     let getUnit = (num:any) => {
         // Nine Zeroes for Billions
         return Math.abs(Number(num)) >= 1.0e+9
