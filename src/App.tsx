@@ -14,6 +14,7 @@ function App() {
 
   const [darkTheme, setDarkTheme] = useState(true);
 
+  //title for the page
   useEffect(() =>{
     document.title = 'CryptoWay';
   }, []);

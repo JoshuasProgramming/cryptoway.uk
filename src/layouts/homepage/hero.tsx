@@ -1,5 +1,7 @@
+//imported react
 import React from 'react';
 
+//imported images
 import hero_image from './images/hero_image.png';
 
 function Hero() {

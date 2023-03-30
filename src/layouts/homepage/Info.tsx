@@ -1,3 +1,4 @@
+//imported react
 import React from 'react'
 
 function Info() {
