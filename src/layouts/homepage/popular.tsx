@@ -1,4 +1,7 @@
+//imported axios for data fetching
 import axios from 'axios';
+
+//imported react
 import React, { useEffect, useState } from 'react'
 
 //import react router from 'react-router
