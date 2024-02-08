@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/pages/login" element={<Login />} />
-        <Route path="/pages/coins" element={<Coin_page />} />
+        <Route path="/pages/coin_page/:name" element={<Coin_page />} />
       </Routes>
     </Router>
     // <Router>

@@ -7,6 +7,8 @@ import React, { useEffect, useState } from 'react'
 //import react router from 'react-router
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
+import Coin_page from '../../pages/coin_page';
+
 
 function Popular(): JSX.Element | any {
 
@@ -56,7 +58,7 @@ function Popular(): JSX.Element | any {
             <section className="popular">
                 <div className="popular-heading">
                     <h1>Popular Cryptocurrencies</h1>
-                    <a onClick={()=> alert('worked')}>View all markets &#10148;</a>
+                    <Link to='../pages/coin_page' onClick={()=> alert('worked')}>View all markets &#10148;</Link>
                 </div>
 
                 <table>
@@ -70,8 +72,8 @@ function Popular(): JSX.Element | any {
                     </tr>
                     {
                     Object.assign(data)?.map((value:any, index:number) => (
-                        <tr className='data' onClick={() => <Link to={'../pages/coin_page'}></Link>}>
-                        <td>{value.market_cap_rank}</td>   
+                        <tr className='data'>
+                        <td><Link to={`../pages/coin_page/${value.name}`}>{value.market_cap_rank}</Link></td>   
                         <td className='test'><img src={value.image} /> {value.name} <span>{value.symbol.toUpperCase()}</span></td>    
                         <td><strong>£{value.current_price.toLocaleString("en-US")}</strong></td>
 
@@ -87,7 +89,7 @@ function Popular(): JSX.Element | any {
                         
                         <td><strong>{getUnit(value.total_volume)}</strong></td>
                         <td><strong>£{getUnit(value.market_cap).toLocaleString("en-US")}</strong></td>
-                        </tr>                    
+                        </tr>                  
                     ))
                     }
                 </table>
