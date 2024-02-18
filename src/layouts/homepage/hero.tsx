@@ -1,6 +1,8 @@
 //imported react
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 //imported images
 import hero_image from './images/hero_image.png';
 
@@ -15,6 +17,7 @@ function Hero() {
             <p>Join the millions of people who trust us to securely buy, sell, and store their cryptocurrencies.</p>
 
             <div className="btn-container">
+              {/* <a className='pd-right'>Sign up</a> */}
               <a href=""className='pd-right btns'>Sign Up</a>
               <a href=""className='btns'>Learn More</a>
             </div>

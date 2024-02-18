@@ -14,9 +14,11 @@ import Annual from './layouts/homepage/annual/annual';
 import Popular from './layouts/homepage/popular';
 
 //import pages
+import Register from './pages/register';
 import Login from './pages/login';
 import Coin_page from './pages/coin_page';
 import Home from './pages/home';
+import About from './pages/about';
 
 function App() {
 
@@ -31,8 +33,10 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path="/pages/register" element={<Register />} />
         <Route path="/pages/login" element={<Login />} />
         <Route path="/pages/coin_page/:name" element={<Coin_page />} />
+        <Route path="/pages/about" element={<About />} />
       </Routes>
     </Router>
     // <Router>
